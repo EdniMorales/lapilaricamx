@@ -1,452 +1,1025 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Lacteos | La Pilarica</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
-      <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-        <!-- Core theme CSS (includes Bootstrap)-->   
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/stilo.css" rel="stylesheet" />
-        <link href="css/animate.css" rel="stylesheet" />
-
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #1b1295;" id="navbar"><!-- sticky-top -->
-                <div class="container px-5" >
-                    <a class="navbar-brand" href="#">
-                        <img src="../lapilaricamx//assets/logo-resplandor-bco.png" alt="Logo" width="90" height="65" class="d-inline-block align-text-top">
-                      </a>
-                   <!--  <a class="navbar-brand" href="index.html">Lacteos La Pilarica</a> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">              
-                            <li class="nav-item dropdown" id="dmenu">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="blog-home.html">Quesos Blancos</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Quesos Amarillos</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Quesos Gourmet</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Cremas</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Mantequillas</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Postres</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Yogurth</a></li>  
-                                    <li><a class="dropdown-item" href="blog-post.html">Ricottin</a></li>  
-                                    <li><a class="dropdown-item" href="blog-post.html">prueba de sincronizacion con GH</a></li>     
-
-                                </ul>
-                                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Lacteos | La Pilarica</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/stilo.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav
+        class="navbar navbar-expand-lg fixed-top"
+        style="background-color: #1b1295"
+        id="navbar"
+      >
+        <!-- sticky-top -->
+        <div class="container px-5">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../lapilaricamx//assets/logo-resplandor-bco.png"
+              alt="Logo"
+              width="90"
+              height="65"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <!--  <a class="navbar-brand" href="index.html">Lacteos La Pilarica</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown" id="dmenu">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Productos</a
+                >
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownBlog"
+                >
+                  <li>
+                    <a class="dropdown-item" href="blog-home.html"
+                      >Quesos Blancos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog-post.html"
+                      >Quesos Amarillos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog-post.html"
+                      >Quesos Gourmet</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog-post.html">Cremas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog-post.html"
+                      >Mantequillas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog-post.html">Postres</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog-post.html">Yogurth</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog-post.html">Ricottin</a>
+                  </li>
+                </ul>
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                   <a class="dropdown-item" href="#">Action</a>
                                   <a class="dropdown-item" href="#">Another action</a>
-                                  <div class="dropdown-divider"></div>
+                                  <div class="dropdown-divider"></div>sfd{gkzdfklñhjvzsdikoñvjnxfkl}
                                   <a class="dropdown-item" href="#">Something else here</a>
                                 </div> -->
-                                <!-- PRUEBA -->
-                            </li>                     
-                         <!--<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactanos</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                <li><a class="dropdown-item" href="about.html">Bolsa de Trabajo</a></li>    
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="index.html">Solo el Amor Supera la Leche</a></li>
-                        <div class="searchbar">
-                          <input class="search_input" type="text" name="" placeholder="Buscar ...">
-                          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>   
-                        </div>
-                        <!--     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <!-- PRUEBA -->
+              </li>
+              <!--<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>-->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdownBlog"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Contactanos</a
+                >
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownBlog"
+                >
+                  <li>
+                    <a class="dropdown-item" href="about.html"
+                      >Bolsa de Trabajo</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="amor.html"
+                  >Solo el Amor Supera la Leche</a
+                >
+              </li>
+              <div class="searchbar">
+                <input
+                  class="search_input"
+                  type="text"
+                  name=""
+                  placeholder="Buscar ..."
+                />
+                <a href="#" class="search_icon"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </div>
+              <!--     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> -->
-                          <!--   <li class="nav-item dropdown">
+              <!--   <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                     <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
                                     <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
                                 </ul>
                             </li> -->
-                       <!--      <li class="nav-item dropdown">
+              <!--      <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
                                     <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
                                     <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
                                 </ul>
                             </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header-->
-             <!-- The video -->
-       
-<!-- <video autoplay muted loop id="myVideo">
-    <source src="../pilaricamx/assets/headermovie1.mp4" type="video/mp4">
-  </video>-->
-            <header class="masthead py-5">
-             
-<!--<video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Header-->
+      <header class="masthead py-5">
+        <!--<video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
   <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
 </video>-->
-  <!-- Optional: some overlay text to describe the video -->
- <!-- <div class="content">
+        <!-- Optional: some overlay text to describe the video -->
+        <!-- <div class="content">
     <h1>Heading</h1>
     <p>Lorem ipsum...</p>
      Use a button to pause/play the video with JavaScript 
     <button id="myBtn" onclick="myFunction()">Pause</button>
   </div>-->
-               <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-5 fw-bolder text-white mb-2">Solo el Amor Supera la Leche</h1>
-                                <p class="lead fw-normal text-white-50 mb-4">En Lácteos la Pilarica sabemos que todos tenemos preferencias diferentes, por eso contamos con una extensa gama de productos, elaborados con el mismo amor de siempre.</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Mas productos</a>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="#!">Ver mas ...</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+        <div class="container px-5">
+          <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+              <div class="my-5 text-center text-xl-start">
+                <h1 class="display-5 fw-bolder text-white mb-2">
+                  Solo el Amor Supera la Leche
+                </h1>
+                <p class="lead fw-normal text-white-50 mb-4">
+                  En Lácteos la Pilarica sabemos que todos tenemos preferencias
+                  diferentes, por eso contamos con una extensa gama de
+                  productos, elaborados con el mismo amor de siempre.
+                </p>
+                <div
+                  class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start"
+                >
+                  <a
+                    class="btn btn-primary btn-lg px-4 me-sm-3"
+                    href="#features"
+                    >Mas productos</a
+                  >
+                  <a class="btn btn-outline-light btn-lg px-4" href="#!"
+                    >Ver mas ...</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
                         <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
   <source src="../pilaricamx/assets/headermovie1.mp4" type="video/mp4">
 </video>          </div> -->
-                          
-                 <!--        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" 
-                        src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." />
-                    </div> --> 
-                </div>
-                </div>
-            </header>
-            <!-- Features section-->
-            <section class="py-5" id="features">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">A better way to start building.</h2></div>
-                        <div class="col-lg-8">
-                            <div class="row gx-5 row-cols-1 row-cols-md-2">
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col mb-5 mb-md-0 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                                <div class="col h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Testimonial section-->
-          <section class="py-5">
-            <div class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-10 col-xl-7">
-                            <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">"
-                                    Con mas de 40 años de tradición en la fabricación de productos derivados de la leche, en Lácteos La Pilarica ofrecemos un gran surtido de productos artesanales de alta calidad.
-                                    
-                                    Lácteos La Pilarica elabora sus productos con leche de alto valor nutrimental y cada uno de ellos es procesado con técnicas tradicionales que nos permiten acercar el amor del campo hasta su mesa."</div>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                    <div class="fw-bold">
-                                        Sr. Fidel Alfaro
-                                        <span class="fw-bold text-primary mx-1">/</span>
-                                        Fundador Lacteos La Pilarica
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </section>
-            <!-- Blog preview section-->
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
-                            <div class="text-center wow animated bounceInLeft">
-                                <h2 class="fw-bolder">¡Pruebalo en tu cocina!</h2>
-                                <p class="lead fw-normal text-muted mb-5">La mejor calidad y sabor artesanal hasta tu mesa.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 wow animated fadeInLeft">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="../lapilaricamx/assets/cuadroRA.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Receta 1</h5></a>
-                                    <p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Kelly Rowan</div>
-                                                <div class="text-muted">March 12, 2023 &middot; 6 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="../lapilaricamx/assets/cuadroMotz.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Receta 2</h5></a>
-                                    <p class="card-text mb-0">This text is a bit longer to illustrate the adaptive height of each card. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Josiah Barclay</div>
-                                                <div class="text-muted">March 23, 2023 &middot; 4 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="../lapilaricamx/assets/cuadre-template.png" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Receta 3</h5></a>
-                                    <p class="card-text mb-0">Some more quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
-                                            <div class="small">
-                                                <div class="fw-bold">Evelyn Martinez</div>
-                                                <div class="text-muted">April 2, 2023 &middot; 10 min read</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-   <!-- Call to action-->
-   <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-        <div class="mb-4 mb-xl-0">
-            <div class="fs-3 fw-bold text-white"> Quieres ser cliente mayorista?</div>
-            <div class="text-white-50">Ingresa tus datos de tu negocio y nos comunicaremos contigo</div>
+            <!--<div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" 
+                        src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div> -->
+          </div>
         </div>
-        <div class="ms-xl-4">
+      </header>
+      <!-- The video -->
+      <!-- <video autoplay muted loop id="myVideo">
+    <source src="../lapilaricamx/" type="video/mp4">
+  </video> -->
 
-          <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
+      <!--   <iframe width="100%" height="315" src="https://www.youtube.com/embed/bfF3X9DSAZ4?si=dimsWbvasNFDGrNu&amp;controls=0" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
+      <!-- Features section-->
+      <section class="py-5" id="features">
+        <div class="container px-5 my-5">
+          <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <h2 class="fw-bolder mb-0">A better way to start building.</h2>
             </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
+            <div class="col-lg-8">
+              <div class="row gx-5 row-cols-1 row-cols-md-2">
+                <div class="col mb-5 h-100">
+                  <div
+                    class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                  >
+                    <i class="bi bi-collection"></i>
+                  </div>
+                  <h2 class="h5">Featured title</h2>
+                  <p class="mb-0">
+                    Paragraph of text beneath the heading to explain the
+                    heading. Here is just a bit more text.
+                  </p>
+                </div>
+                <div class="col mb-5 h-100">
+                  <div
+                    class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                  >
+                    <i class="bi bi-building"></i>
+                  </div>
+                  <h2 class="h5">Featured title</h2>
+                  <p class="mb-0">
+                    Paragraph of text beneath the heading to explain the
+                    heading. Here is just a bit more text.
+                  </p>
+                </div>
+                <div class="col mb-5 mb-md-0 h-100">
+                  <div
+                    class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                  >
+                    <i class="bi bi-toggles2"></i>
+                  </div>
+                  <h2 class="h5">Featured title</h2>
+                  <p class="mb-0">
+                    Paragraph of text beneath the heading to explain the
+                    heading. Here is just a bit more text.
+                  </p>
+                </div>
+                <div class="col h-100">
+                  <div
+                    class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                  >
+                    <i class="bi bi-toggles2"></i>
+                  </div>
+                  <h2 class="h5">Featured title</h2>
+                  <p class="mb-0">
+                    Paragraph of text beneath the heading to explain the
+                    heading. Here is just a bit more text.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
+      </section>
+      <!-- Historia Don Fidel-->
+      <section class="py-5">
+        <div class="py-5 bg-light">
+          <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+              <div class="col-lg-10 col-xl-7">
+                <div class="text-center">
+                  <div class="fs-4 mb-4 fst-italic">
+                    " Con mas de 40 años de tradición en la fabricación de
+                    productos derivados de la leche, en Lácteos La Pilarica
+                    ofrecemos un gran surtido de productos artesanales de alta
+                    calidad. Lácteos La Pilarica elabora sus productos con leche
+                    de alto valor nutrimental y cada uno de ellos es procesado
+                    con técnicas tradicionales que nos permiten acercar el amor
+                    del campo hasta su mesa."
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      class="rounded-circle me-3"
+                      src="https://dummyimage.com/40x40/ced4da/6c757d"
+                      alt="..."
+                    />
+                    <div class="fw-bold">
+                      Sr. Fidel Alfaro
+                      <span class="fw-bold text-primary mx-1">/</span>
+                      Fundador Lacteos La Pilarica
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </form>
-            <div class="input-group mb-2">
-                <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
-                <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
+          </div>
+        </div>
+      </section>
+      <!-- Blog preview section-->
+      <section class="py-5">
+        <div class="px-5 my-5">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+              <div class="text-center wow animated bounceInLeft">
+                <h2 class="fw-bolder">¡Pruebalo en tu cocina!</h2>
+                <p class="lead fw-normal text-muted mb-5">
+                  La mejor calidad y sabor artesanal hasta tu mesa.
+                </p>
+              </div>
             </div>
-            <div class="small text-white-50">We care about privacy, and will never share your data.</div>
+          </div>
+
+          <div class="row gx-5">
+            <div class="col-lg-3 mb-5 wow animated fadeInLeft">
+              <div class="card h-100 shadow border-0">
+                <img
+                  class="card-img-top"
+                  src="../lapilaricamx/assets/cuadroRA.png"
+                  alt="..."
+                />
+                <div class="card-body p-4">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                    News
+                  </div>
+                  <a
+                    class="text-decoration-none link-dark stretched-link"
+                    href="#!"
+                    ><h5 class="card-title mb-3">
+                      Molletes de Queso Chipotle
+                    </h5></a
+                  >
+                  <p class="card-text mb-0">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded-circle me-3"
+                        src="https://dummyimage.com/40x40/ced4da/6c757d"
+                        alt="..."
+                      />
+                      <div class="small">
+                        <div class="fw-bold">Kelly Rowan</div>
+                        <div class="text-muted">
+                          March 12, 2023 &middot; 6 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mb-5">
+              <div class="card h-100 shadow border-0">
+                <img
+                  class="card-img-top"
+                  src="../lapilaricamx/assets/cuadroMotz.png"
+                  alt="..."
+                />
+                <div class="card-body p-4">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                    Media
+                  </div>
+                  <a
+                    class="text-decoration-none link-dark stretched-link"
+                    href="#!"
+                    ><h5 class="card-title mb-3">Bizcocho de Mantequilla</h5></a
+                  >
+                  <p class="card-text mb-0">
+                    This text is a bit longer to illustrate the adaptive height
+                    of each card. Some quick example text to build on the card
+                    title and make up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded-circle me-3"
+                        src="https://dummyimage.com/40x40/ced4da/6c757d"
+                        alt="..."
+                      />
+                      <div class="small">
+                        <div class="fw-bold">Josiah Barclay</div>
+                        <div class="text-muted">
+                          March 23, 2023 &middot; 4 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mb-5">
+              <div class="card h-100 shadow border-0">
+                <img
+                  class="card-img-top"
+                  src="../lapilaricamx/assets/cuadroMotz.png"
+                  alt="..."
+                />
+                <div class="card-body p-4">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                    Media
+                  </div>
+                  <a
+                    class="text-decoration-none link-dark stretched-link"
+                    href="#!"
+                    ><h5 class="card-title mb-3">Spaghetti Hawaiano</h5></a
+                  >
+                  <p class="card-text mb-0">
+                    This text is a bit longer to illustrate the adaptive height
+                    of each card. Some quick example text to build on the card
+                    title and make up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded-circle me-3"
+                        src="https://dummyimage.com/40x40/ced4da/6c757d"
+                        alt="..."
+                      />
+                      <div class="small">
+                        <div class="fw-bold">Josiah Barclay</div>
+                        <div class="text-muted">
+                          March 23, 2023 &middot; 4 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5">
+              <div class="card h-100 shadow border-0">
+                <img
+                  class="card-img-top"
+                  src="../lapilaricamx/assets/cuadre-template.png"
+                  alt="..."
+                />
+                <div class="card-body p-4">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                    Especialidad Pilarica
+                  </div>
+                  <a
+                    class="text-decoration-none link-dark stretched-link"
+                    href="#!"
+                    ><h5 class="card-title mb-3">
+                      Galletas de Naranja con Mantequilla (Pilarica)
+                    </h5></a
+                  >
+                  <p class="card-text mb-0">
+                    Some more quick example text to build on the card title and
+                    make up the bulk of the card's content.
+                  </p>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="rounded-circle me-3"
+                        src="https://dummyimage.com/40x40/ced4da/6c757d"
+                        alt="..."
+                      />
+                      <div class="small">
+                        <div class="fw-bold">Evelyn Martinez</div>
+                        <div class="text-muted">
+                          April 2, 2023 &middot; 10 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</aside>
+      </section>
+      <!-- Team members section-->
+      <section class="py-5 bg-light">
+        <div class="container px-5 my-5">
+          <div class="text-center">
+            <h2 class="fw-bolder">Todas nuestras especialidades</h2>
+            <p class="lead fw-normal text-muted mb-5">
+              Elaborados 100% Artesanal
+            </p>
+          </div>
 
+          <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4">
+            <!-- justify-content-center -->
+            <div class="col mb-5 mb-5 mb-xl-0">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/oaxacabn.png"
+                  alt="..."
+                />
+                <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
+                                          <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
+              </div>
+            </div>
+            <div class="col mb-5 mb-5 mb-xl-0">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/panelabn.png"
+                  alt="..."
+                />
+                <!--  <h5 class="fw-bolder">Arden Vasek</h5>
+                                          <div class="fst-italic text-muted">CFO</div> -->
+              </div>
+            </div>
+            <div class="col mb-5 mb-5 mb-sm-0">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/cremabn.png"
+                  alt="..."
+                />
+                <!--  <h5 class="fw-bolder">Toribio Nerthus</h5>
+                                          <div class="fst-italic text-muted">Operations Manager</div> -->
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/mozzarellabn.png"
+                  alt="..."
+                />
+                <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
+                                          <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/gustodelicatobn.png"
+                  alt="..."
+                />
+                <!--     <h5 class="fw-bolder">Malvina Cilla</h5>
+                                        <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
 
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/mashiegobn.png"
+                  alt="..."
+                />
+                <!--    <h5 class="fw-bolder">Malvina Cilla</h5>
+                                      <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.6681752713012!2d-98.88628984653572!3d19.311205690031276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa21134d905ff%3A0xe3db2ad818cf6e41!2sLa%20Pilarica!5e0!3m2!1ses!2smx!4v1740519007211!5m2!1ses!2smx" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/RancheroGourmetbn.png"
+                  alt="..."
+                />
+                <!--       <h5 class="fw-bolder">Malvina Cilla</h5>
+                                    <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
 
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/requesonbn.png"
+                  alt="..."
+                />
+                <!--       <h5 class="fw-bolder">Malvina Cilla</h5>
+                                  <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
 
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/rancherobn.png"
+                  alt="..."
+                />
+                <!--       <h5 class="fw-bolder">Malvina Cilla</h5>
+                                <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
 
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/ralladobn.png"
+                  alt="..."
+                />
+                <!--           <h5 class="fw-bolder">Malvina Cilla</h5>
+                              <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/frescobn.png"
+                  alt="..."
+                />
+                <!--    <h5 class="fw-bolder">Malvina Cilla</h5>
+                            <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
 
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/Cotijabn.png"
+                  alt="..."
+                />
+                <!--         <h5 class="fw-bolder">Malvina Cilla</h5>
+                          <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
 
-        </main>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/doble_crema_bn.png"
+                  alt="..."
+                />
+                <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
+                        <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
 
-        <!-- Footer-->
-        <!-- Footer -->
-<footer class="text-center bg-body-tertiary text-muted">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-5 border-bottom container">
-    <!-- Left -->
-    <div class="me-3 d-none d-lg-block text-center">
-      <span>¡Siguenos en nuestras redes sociales!</span>
-    </div>
-    <!-- Left -->
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4">
-        <i class="fab fa-facebook-square fa-3x"></i>
-      </a>
-      <a href="" class="me-4">
-        <i class="fab fa-instagram fa-3x"></i>
-      </a>
-      <a href="" class="me-4">
-        <i class="fab fa-linkedin-square fa-3x"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media --> 
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Lacteos La Pilarica
-          </h6>
-          <p class="text-center">
-            En Lácteos la Pilarica sabemos que todos tenemos preferencias diferentes, 
-            por eso contamos con una extensa gama de productos, elaborados con el mismo amor de siempre.
-          </p>
-        </div>
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Productos
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Quesos Blancos</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Quesos Amarillos</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Quesos Gourmet</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Cremas</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Mantequilla</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-           Postres
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Fresas con Crema</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Duraznos con Crema</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Ricottin</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Regala una canasta</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Ubicanos</h6>
-          <p><i class="fas fa-home me-3"></i> Benito Juárez Sur N 46, Centro, 56530 Ixtapaluca, Méx.</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            soporte@pilarica.mx
-          </p>
-          <p><i class="fas fa-phone me-3"></i>(55) 5972 0102</p>
-          <p><i class="fab fa-whatsapp me-3"></i> (55) 5555 5555</p>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2025 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">teampcmx</a>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/chihuahuabn.png"
+                  alt="..."
+                />
+                <!--         <h5 class="fw-bolder">Malvina Cilla</h5>
+                      <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/capressebn.png"
+                  alt="..."
+                />
+                <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
+                    <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/padellabn.png"
+                  alt="..."
+                />
+                <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
+                  <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/Botanerobn.png"
+                  alt="..."
+                />
+                <!--       <h5 class="fw-bolder">Malvina Cilla</h5>
+                <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/fresas_con_crema_bn.png"
+                  alt="..."
+                />
+                <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
+              <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/duraznos_con_crema_bn.png"
+                  alt="..."
+                />
+                <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
+            <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/Gelatina-logo-bn.png"
+                  alt="..."
+                />
+                <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
+          <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/cajetabn.png"
+                  alt="..."
+                />
+                <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
+        <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/crema_fresas_bn.png"
+                  alt="..."
+                />
+                <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
+      <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/Logo-Pay-bn.png"
+                  alt="..."
+                />
+                <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
+      <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="text-center">
+                <img
+                  class="img-fluid mb-4 px-4"
+                  src="assets/Yoghurt-logo-bn.png"
+                  alt="..."
+                />
+                <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
+      <div class="fst-italic text-muted">CTO</div> -->
+              </div>
+            </div>
+            <!-- <div class="col mb-5">
+  <div class="text-center">
+      <img class="img-fluid mb-4 px-4" src="assets/Yoguricas-logo-bn.png" alt="..." />
+    <h5 class="fw-bolder">Malvina Cilla</h5>
+      <div class="fst-italic text-muted">CTO</div> 
   </div>
-  <!-- Copyright -->
-</footer>
+</div> -->
+          </div>
+        </div>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.6681752713012!2d-98.88628984653572!3d19.311205690031276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa21134d905ff%3A0xe3db2ad818cf6e41!2sLa%20Pilarica!5e0!3m2!1ses!2smx!4v1740519007211!5m2!1ses!2smx"
+        width="100%"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </main>
+    <!-- Footer-->
+    <!-- Footer -->
+    <footer class="text-center bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-5 border-bottom container">
+        <!-- Left -->
+        <div class="me-3 d-none d-lg-block text-center tam-l">
+          <span class="">¡Siguenos en nuestras redes sociales!</span>
+        </div>
+        <!-- Left -->
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4">
+            <i class="fab fa-facebook-square fa-3x"></i>
+          </a>
+          <a href="" class="me-4">
+            <i class="fab fa-instagram fa-3x"></i>
+          </a>
+          <a href="" class="me-4">
+            <i class="fab fa-linkedin-square fa-3x"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Lacteos La Pilarica
+              </h6>
+              <p class="text-center">
+                En Lácteos la Pilarica sabemos que todos tenemos preferencias
+                diferentes, por eso contamos con una extensa gama de productos,
+                elaborados con el mismo amor de siempre.
+              </p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
+              <p>
+                <a href="#!" class="text-reset">Quesos Blancos</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Quesos Amarillos</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Quesos Gourmet</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Cremas</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Mantequilla</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Postres</h6>
+              <p>
+                <a href="#!" class="text-reset">Fresas con Crema</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Duraznos con Crema</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Ricottin</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Regala una canasta</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Ubicanos</h6>
+              <p>
+                <i class="fas fa-home me-3"></i> Benito Juárez Sur N 46, Centro,
+                56530 Ixtapaluca, Méx.
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                soporte@pilarica.mx
+              </p>
+              <p><i class="fas fa-phone me-3"></i>(55) 5972 0102</p>
+              <p><i class="fab fa-whatsapp me-3"></i> (55) 5555 5555</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+      <!-- Call to action-->
+      <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+        <div
+          class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start"
+        >
+          <div class="mb-4 mb-xl-0">
+            <div class="fs-3 fw-bold text-white">
+              ¡Suscribete a nuestras noticias!
+            </div>
+            <div class="text-white-50 text-center">
+              Registra tu correo electronico
+            </div>
+          </div>
+          <div class="ms-xl-4">
+            <!--        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form> -->
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Correo Electronico ..."
+                aria-label="Correo Electronico..."
+                aria-describedby="button-newsletter"
+              />
+              <button
+                class="btn btn-outline-light"
+                id="button-newsletter"
+                type="button"
+              >
+                Registrarse
+              </button>
+            </div>
+            <div class="small text-white-50">
+              Nos preocupamos por la privacidad y nunca compartiremos sus datos.
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: #380000">
+        © 2025 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+          >teampcmx</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <!--   <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
@@ -462,41 +1035,54 @@
                 </div>
             </div>
         </footer>-->
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-       <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-        <script src="../pilaricamx/js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
-        <script src="js/wow.min.js"></script>
-        <script>
-          new WOW().init();
-        </script>
-        <script>var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-              } else {
-                document.getElementById("navbar").style.top = "-125px";
-              }
-              prevScrollpos = currentScrollPos;
-            }
-            </script>
-            <script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="../pilaricamx/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-
-               $('.dropdown').on('show.bs.dropdown',function() {
-                          $(this).find('.dropdown-menu').first().stop(true, true).slideToggle(1000);
-                      });
-                      $('.dropdown').on('hide.bs.dropdown',function() {
-                          $(this).find('.dropdown-menu').first().stop(true, true).slideToggle(1000);
-                      });      
-                       
-                  
-            </script>
-    </body>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-125px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <script>
+      $(".dropdown").on("show.bs.dropdown", function () {
+        $(this)
+          .find(".dropdown-menu")
+          .first()
+          .stop(true, true)
+          .slideToggle(1000);
+      });
+      $(".dropdown").on("hide.bs.dropdown", function () {
+        $(this)
+          .find(".dropdown-menu")
+          .first()
+          .stop(true, true)
+          .slideToggle(1000);
+      });
+    </script>
+  </body>
 </html>
