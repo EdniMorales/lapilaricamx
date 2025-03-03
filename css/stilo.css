@@ -158,13 +158,13 @@
   margin-bottom: auto;
   /*   margin-top: auto; */
   height: 60px;
-  background-color: #353b48;
-  border-radius: 30px;
+  background-color: white;
+  border-radius: 30PX;
   padding: 10px;
 }
 
 .search_input {
-  color: white;
+  color: black;
   border: 0;
   outline: 0;
   background: none;
@@ -182,8 +182,8 @@
 }
 
 .searchbar:hover > .search_icon {
-  background: white;
-  color: #e74c3c;
+  background: black;
+  color: black;
 }
 
 .search_icon {
@@ -194,7 +194,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
