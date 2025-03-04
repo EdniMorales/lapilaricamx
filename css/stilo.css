@@ -181,11 +181,13 @@
   transition: width 0.4s linear;
 }
 
+
+
+
 .searchbar:hover > .search_icon {
   background: black;
   color: black;
 }
-
 .search_icon {
   height: 40px;
   width: 40px;
@@ -222,6 +224,36 @@ header.masthead {
 }
 @supports (object-fit: cover) {
   header.masthead {
+    /*  height: 100%; */
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+
+
+header.masthead1 {
+  -webkit-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
+  margin-top: 4.3%;
+  /*   padding-top: 10.5rem;
+  padding-bottom: 6rem; */
+  text-align: center;
+  color: black;
+  background-image: url("../assets/header-vacas.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.9;
+  width: 100%;
+  height: auto;
+
+  font-family: "Poppins", serif;
+}
+@supports (object-fit: cover) {
+  header.masthead1 {
     /*  height: 100%; */
     object-fit: cover;
     object-position: center center;
