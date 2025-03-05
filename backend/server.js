@@ -3,10 +3,12 @@ require('dotenv').config({ path: './settings.env' }); // Especifica la ruta al a
 
 const express = require('express');
 const mysql = require('mysql2');
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
 // Middleware para manejar datos en formato JSON
+app.use(cors());
 app.use(express.json());
 
 // Configuración de la conexión a la base de datos MySQL utilizando las variables de entorno
