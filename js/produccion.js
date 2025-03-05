@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function cargarProductos() {
     // URL de la API (ajustar según su configuración)
-    const apiUrl = 'http://localhost:3000/lista-productos'; //const apiUrl = 'https://el-dominio.com/api/lista-productos';
+    const apiUrl = 'http://localhost:3000/lapilaricamx/lista-productos'; //const apiUrl = 'https://el-dominio.com/api/lista-productos';
     
     // Elemento del DOM donde se mostrarán los productos
     const contenedorProductos = document.getElementById('productos-container');
