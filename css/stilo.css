@@ -260,6 +260,10 @@ header.masthead1 {
   }
 }
 
+#categ{
+  padding-bottom: 25%;
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 /*#myVideo {
    display: -webkit-flex ;
