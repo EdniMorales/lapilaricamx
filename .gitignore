@@ -1,2 +1,3 @@
 settings.env
 *.env
+php/credenciales.txt
