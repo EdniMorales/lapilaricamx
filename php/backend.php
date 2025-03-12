@@ -2,10 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$servername ="107.161.179.69";
-$username ="fvyvvdbc_fvyvvdbc";
-$password ="LaPilarica24#";
-$dbname = "fvyvvdbc_pilaweb";
+$servername ="";
+$username ="";
+$password ="";
+$dbname = "";
 $port =3306;
 
 // Crear la conexión
@@ -141,9 +141,9 @@ if (isset($_GET['action'])) {
     } elseif ($action == 'searchIdAllProductos' && isset($_GET['search_prod'])) {
         $search_prod = mysqli_real_escape_string($conn, $_GET['search_prod']);
         $data = searchIdAllProductos($conn, $search_prod);
-    } elseif ($action == 'searchProductos' && isset($_GET['search_term'])) {
-        $search_term = mysqli_real_escape_string($conn, $_GET['search_term']);
-        $data = searchProductos($conn, $search_term);
+    } elseif ($action == 'searchOnlyProductos' && isset($_GET['search_prod'])) {
+        $search_term = mysqli_real_escape_string($conn, $_GET['search_prod']);
+        $data = searchOnlyProductos($conn, $search_term);
     } else {
         $data = ["error" => "Acción no válida"];
     }
