@@ -153,11 +153,12 @@
               <div class="searchbar">
                 <input
                   class="search_input"
+                  id="buscador-prod-index"
                   type="text"
                   name=""
                   placeholder="Buscar ..."
                 />
-                <a href="#" class="search_icon" id="buscador-prod-index"
+                <a href="#" class="search_icon" id="button-buscador-prod-index"
                   ><i class="fa fa-search" aria-hidden="true"></i><!-- <i class="fas fa-search"></i
                 > --></a>
               </div>
@@ -1289,6 +1290,21 @@
           .stop(true, true)
           .slideToggle(1000);
       });
+    </script>
+
+    <!-- Logica del buscador -->
+    <script type="module">
+      import * as trriggers from './js/backend/trigger.js';  // Importar las funciones desde el módulo
+
+      // Asocia los eventos con los elementos del HTML
+      document.getElementById("buscador-prod-index").addEventListener("input",function() {
+        const buttonString = "buscador-prod-index";
+        trriggers.ProductSearch(buttonString);
+      }); // Barra de navegación
+      document.getElementById("button-buscador-prod-index").addEventListener("click", function() {
+        const buttonString = "buscador-prod-index";  // El string que quieres pasar
+        trriggers.ProductSearch(buttonString); // Pasa el string a la función
+      });// Botón de búsqueda
     </script>
   </body>
 </html>
