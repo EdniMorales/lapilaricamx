@@ -17,7 +17,7 @@ export function dropdownprod (widget,array) {
         const drop = document.createElement('div');
         drop.classList.add('dropdownList');
         drop.innerHTML= `
-        <h3><a href="articulo.html?id=${product.ID_PRODUCTOS}" target="_blank">${product.NOMBRE}</a></h3>
+        <h6><a href="articulo.html?id=${product.ID_PRODUCTOS}" target="_blank">${product.NOMBRE}</a></h6>
     `;
 
     ddrop.appendChild(drop);
