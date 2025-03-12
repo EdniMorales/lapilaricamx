@@ -353,10 +353,10 @@ margin-bottom: -5%;
   backface-visibility: hidden;
 }
 
-.flip-box-front {
-/*   background-color: #bbb; */
- /*  color: black; */
-}
+/* .flip-box-front {
+ background-color: #bbb; 
+ color: black; 
+} */
 
 .flip-box-back {
  /*  background-color: dodgerblue; */
