@@ -3,6 +3,7 @@ import * as widgets from './widgets.js';
 // Disparadores de los botones del DOM
 export function ProductSearch(Id_Producto, page, dropdown){
     const Search_Text = document.getElementById(Id_Producto).value;
+    const widget = document.getElementById(dropdown)
     console.log(`Texto buscado: ${Search_Text}`);
 
     // Validar que no este vacio
@@ -17,5 +18,7 @@ export function ProductSearch(Id_Producto, page, dropdown){
             .catch(error => {
                 console.error("Error al buscar productos:", error);
             });
+    }else{
+        widget.innerHTML = ''
     }
 };
