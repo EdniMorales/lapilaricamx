@@ -109,7 +109,9 @@ function searchOnlyProductos($conn, $search_term) {
 
         WHERE NOMBRE LIKE ? AND STATUS = 'ACTIVO'
 
-        ORDER BY NOMBRE;
+        ORDER BY NOMBRE
+        
+        LIMIT 4;
     EOD;
 
     $stmt = $conn->prepare($sql);
