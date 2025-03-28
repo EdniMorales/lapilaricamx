@@ -2,10 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$servername ="";
-$username ="";
-$password ="";
-$dbname = "";
+$servername ="107.161.179.69";
+$username ="fvyvvdbc_fvyvvdbc";
+$password ="LaPilarica24#";
+$dbname = "fvyvvdbc_pilaweb";
 $port =3306;
 
 // Crear la conexión

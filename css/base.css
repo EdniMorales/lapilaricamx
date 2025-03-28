@@ -1,0 +1,120 @@
+:root {
+  --global__leading: 1.6;
+  --global__font-stack: sans-serif;
+
+  --container__max-width: 1280px;
+  --container__padding: 2em;
+
+  --main__block__padding: 4em;
+
+  --footer__credit__margin-top: 2em;
+
+  --lab-grid__cell__width: 300px;
+  --lab-grid__gap: 2em;
+
+  --lab-intro__heading__font-size: 1.25em;
+  --lab-intro__max-width: 36em;
+  --lab-intro__margin-bottom: 2em;
+
+  --body__bg-color: 212 30% 10%;
+  --body__color__900: 212 10% 85%;
+  --body__color__800: 212 5% 65%;
+  --body__color__500: 212 5% 35%;
+
+  --lab-btn__padding: 1em 1.5em;
+  --lab-btn__border-radius: 2em;
+  --lab-btn__large__font-size: 1.5em;
+  --lab-btn__bg-color: hsl(var(--body__color__900) / 2.5%);
+  --lab-btn__hover__bg-color: hsl(var(--body__color__900) / 5%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: hsl(var(--body__color__900));
+}
+
+img,
+svg,
+video,
+audio,
+iframe,
+picture {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  font: 1em / var(--global__leading) var(--global__font-stack);
+  background-color: hsl(var(--body__bg-color));
+  color: hsl(var(--body__color__900) / 90%);
+}
+
+.site-container {
+  max-width: var(--container__max-width);
+  padding: var(--container__padding);
+  margin-inline: auto;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-main {
+  padding-block: var(--main__block__padding);
+}
+
+.site-footer {
+  text-align: center;
+}
+
+.site-footer .site-credits {
+  color: hsl(var(--body__color__500));
+}
+
+.site-footer .site-credits:not(:first-child) {
+  margin-top: var(--footer__credit__margin-top);
+}
+
+.lab-grid {
+  display: grid;
+  gap: var(--lab-grid__gap);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--lab-grid__cell__width), 1fr)
+  );
+}
+
+.lab-intro {
+  font-size: var(--lab-intro__heading__font-size);
+  max-width: var(--lab-intro__max-width);
+  margin-bottom: var(--lab-intro__margin-bottom);
+}
+
+.lab-intro p {
+  color: hsl(var(--body__color__800));
+}
+
+.lab-btn {
+  padding: var(--lab-btn__padding);
+  line-height: 1;
+  display: block;
+  color: currentColor;
+  background-color: var(--lab-btn__bg-color);
+  border-radius: var(--lab-btn__border-radius);
+  text-align: center;
+  text-decoration: none;
+}
+
+.lab-btn:hover {
+  background-color: var(--lab-btn__hover__bg-color);
+}
+
+.lab-btn--lg {
+  font-size: var(--lab-btn__large__font-size);
+}

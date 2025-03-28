@@ -1,0 +1,121 @@
+/* body {
+  background-color:hsl(212, 29.20%, 18.80%);
+  color: rgba(255, 255, 255, 0.75);
+} */
+.hover-zoom {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 1em;
+  border: 0.5em solid var(--lab__border-color);
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.hover-zoom--empty {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-width: 0;
+}
+
+.hover-zoom:not(.hover-zoom--empty):hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hover-zoom-title {
+  text-align: center;
+}
+
+.hover-zoom--basic img {
+  transition: transform 0.5s ease;
+}
+
+.hover-zoom--basic:hover img {
+  transform: scale(1.5);
+}
+
+.hover-zoom--quick-zoom img {
+  transform-origin: 0 0;
+  transition: transform 0.25s, visibility 0.25s ease-in;
+}
+
+.hover-zoom--quick-zoom:hover img {
+  transform: scale(2);
+}
+
+.hover-zoom--point-zoom img {
+  transform-origin: 65% 75%;
+  transition: transform 1s, filter 0.5s ease-out;
+}
+
+.hover-zoom--point-zoom:hover img {
+  transform: scale(5);
+}
+
+.hover-zoom--zoom-n-rotate img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.hover-zoom--zoom-n-rotate:hover img {
+  transform: scale(2) rotate(25deg);
+}
+
+.hover-zoom--slowmo img {
+  transform-origin: 50% 65%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(150%);
+}
+
+.hover-zoom--slowmo:hover img {
+  filter: brightness(100%);
+  transform: scale(3);
+}
+
+.hover-zoom--brightness img {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+
+.hover-zoom--brightness:hover img {
+  filter: brightness(100%);
+  transform: scale(1.3);
+}
+
+.hover-zoom--zoom-n-pan-h img {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.4);
+  transform-origin: 100% 0;
+}
+
+.hover-zoom--zoom-n-pan-h:hover img {
+  transform: scale(1.5) translateX(30%);
+}
+
+.hover-zoom--zoom-n-pan-v img {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.4);
+  transform-origin: 0 0;
+}
+
+.hover-zoom--zoom-n-pan-v:hover img {
+  transform: scale(1.25) translateY(-30%);
+}
+
+.hover-zoom--blur img {
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(2px);
+  transform: scale(1.2);
+}
+
+.hover-zoom--blur:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.hover-zoom--colorize img {
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.hover-zoom--colorize:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}

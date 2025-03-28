@@ -177,9 +177,6 @@
   transition: width 0.4s linear;
 }
 
-
-
-
 .searchbar:hover > .search_icon {
   background: black;
   color: black;
@@ -195,16 +192,47 @@
   color: black;
   text-decoration: none;
 }
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('../assets/new-cheese/delicato/Delicato_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+.masthead:hover {
+  filter: brightness(100%);
+  transform: scale(1);
+}
+
+.title-1{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-top: -30%;
+  text-shadow: 2px 2px #000000;
+}
+.title-2{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+  text-shadow: 2px 2px #000000;
+}
+
+
 
 /*Banner*/
-
+/* 
 header.masthead {
   -webkit-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
   margin-top: 4.3%;
-  /*   padding-top: 10.5rem;
-  padding-bottom: 6rem; */
   text-align: center;
   color: black;
   background-image: url("../assets/header-vacas.jpg");
@@ -215,26 +243,23 @@ header.masthead {
   opacity: 0.9;
   width: 100%;
   height: auto;
-
   font-family: "Poppins", serif;
 }
 @supports (object-fit: cover) {
   header.masthead {
-    /*  height: 100%; */
+
     object-fit: cover;
     object-position: center center;
   }
 }
+ */
 
 
-
-header.masthead1 {
+/* header.masthead1 {
   -webkit-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
   margin-top: 4.3%;
-  /*   padding-top: 10.5rem;
-  padding-bottom: 6rem; */
   text-align: center;
   color: black;
   background-image: url("../assets/header-vacas.jpg");
@@ -250,12 +275,11 @@ header.masthead1 {
 }
 @supports (object-fit: cover) {
   header.masthead1 {
-    /*  height: 100%; */
     object-fit: cover;
     object-position: center center;
   }
 }
-
+ */
 .categ{
 margin-bottom: -5%;
 }
@@ -367,4 +391,15 @@ margin-bottom: -5%;
 /*   margin-right: 150px;
   margin-left: 150px;
   margin-top: 50px; */
+}
+
+.hover-zoom--brightness img {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+
+.hover-zoom--brightness:hover img {
+  filter: brightness(100%);
+  transform: scale(1);
 }
