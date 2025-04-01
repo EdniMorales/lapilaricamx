@@ -203,6 +203,10 @@
   transition: transform 2s, filter 1.5s ease-in-out;
   transform-origin: center center;
   filter: brightness(50%);
+
+  -webkit-box-shadow: -4px 27px 53px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 27px 53px -15px rgba(0,0,0,0.75);
+  box-shadow: -4px 27px 53px -15px rgba(0,0,0,0.75);
 }
 .masthead:hover {
   filter: brightness(100%);
