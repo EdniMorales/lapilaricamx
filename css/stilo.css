@@ -543,11 +543,12 @@ margin-bottom: -5%;
 
 
 .parallax {
+  margin-top: 5%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 900px;
   position: relative;
 }
 
@@ -569,13 +570,13 @@ margin-bottom: -5%;
 }
 
 .parallax-1 {
-  background-image: url('https://picsum.photos/id/1015/1200/800');
+  background-image: url('../assets/new-cheese/provolone/provoleta-rodajas-2.jpg');
 }
 
 .parallax-2 {
-  background-image: url('https://picsum.photos/id/1019/1200/800');
+  background-image: url('../assets/new-cheese/edam/edam-01.jpg');
 }
 
 .parallax-3 {
-  background-image: url('https://picsum.photos/id/1025/1200/800');
+  background-image: url('../assets/new-cheese/chester/chester-chihuahua.jpg');
 }
