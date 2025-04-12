@@ -22,8 +22,6 @@
 /*     @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'); */
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 
-
-
 .poppins-thin {
   font-family: "Poppins", serif;
   font-weight: 100;
@@ -549,7 +547,7 @@ margin-bottom: -5%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 1080px;
   position: relative;
 }
 
