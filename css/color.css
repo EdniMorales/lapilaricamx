@@ -1,0 +1,18 @@
+:root{
+    --fondos-obscuro: #121212;
+    --fondos-claro: #ffffff;
+
+}
+
+[data-theme="dark"] {
+    --fondos-obscuro: #121212;
+    --fondos-claro: #ffffff;
+}
+
+[data-theme="light"] {
+    --fondos-obscuro: #ffffff;
+    --fondos-claro: #121212;
+}
+
+
+

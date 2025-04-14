@@ -1,3 +1,7 @@
+@import url('../css/color.css');
+
+
+
 :root {
   --global__leading: 1.6;
   --global__font-stack: sans-serif;
@@ -36,6 +40,7 @@
 
 a {
   color: hsl(var(--body__color__900));
+  
 }
 
 img,

@@ -269,7 +269,15 @@
   margin-top: -1%;
   text-shadow: 2px 2px #000000;
 }
-
+.title-love-1{
+  font-family: "Just Another Hand", cursive;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-top:15%;
+  text-shadow: 1px 1px #000000;
+  margin-bottom: -35%;
+}
 .masthead1 {
   height: 50vh;
   min-height: 300px;
@@ -570,6 +578,9 @@ margin-bottom: -5%;
 
 .parallax-1 {
   background-image: url('../assets/new-cheese/provolone/provoleta-rodajas-2.jpg');
+  -webkit-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
+  box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
 }
 
 .parallax-2 {
