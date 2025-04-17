@@ -43,7 +43,7 @@
       <!-- Navigation-->
       <nav
         class="navbar navbar-expand-lg fixed-top"
-        style="background-color: #1b1295" 
+        
         id="navbar"
       >
         <!-- sticky-top -->

@@ -158,21 +158,13 @@
   font-weight: 100;
   font-style: normal;
 }
-
-
-
-
 * {
   font-family: "Poppins", serif;
 
 }
 
-
-
-
-
 #navbar {
-  background-color: #333;
+  background-color: #1b1295;
   /*   position: fixed; */
   top: 0;
   width: 100%;
@@ -480,7 +472,9 @@ margin-bottom: -5%;
 
 
 
-
+.content-section{
+ 
+}
 
 
 .portfolio-item {
@@ -489,6 +483,12 @@ margin-bottom: -5%;
   overflow: hidden;
   max-width: 530px;
   margin: auto auto 1rem;
+  -webkit-box-shadow: 2px 7px 34px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 7px 34px -8px rgba(0,0,0,0.75);
+  box-shadow: 2px 7px 34px -8px rgba(0,0,0,0.75);
+
+/*   border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px; */
 }
 .portfolio-item .caption {
   display: flex;
@@ -585,8 +585,14 @@ margin-bottom: -5%;
 
 .parallax-2 {
   background-image: url('../assets/new-cheese/edam/edam-01.jpg');
+  -webkit-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
+  box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
 }
 
 .parallax-3 {
   background-image: url('../assets/new-cheese/chester/chester-chihuahua.jpg');
+  -webkit-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
+  box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
 }
