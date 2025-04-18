@@ -472,9 +472,6 @@ margin-bottom: -5%;
 
 
 
-.content-section{
- 
-}
 
 
 .portfolio-item {
@@ -483,12 +480,14 @@ margin-bottom: -5%;
   overflow: hidden;
   max-width: 530px;
   margin: auto auto 1rem;
+  
   -webkit-box-shadow: 2px 7px 34px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 7px 34px -8px rgba(0,0,0,0.75);
   box-shadow: 2px 7px 34px -8px rgba(0,0,0,0.75);
 
 /*   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px; */
+
 }
 .portfolio-item .caption {
   display: flex;
