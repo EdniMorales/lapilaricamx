@@ -136,12 +136,8 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >Contactanos</a
-                >
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdownBlog"
-                >
+                  >Contactanos</a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                   <li>
                     <a class="dropdown-item" href="about.html"
                       >Bolsa de Trabajo</a
@@ -154,7 +150,23 @@
                   >Solo el Amor Supera la Leche</a
                 >
               </li>
+
+              </ul>
+          
               <div class="searchbar">
+                <input
+                  class="search_input"
+                  id="buscador-prod-index"
+                  type="text"
+                  name=""
+                  placeholder="Buscar"
+                />
+                <a href="#" class="search_icon" id="button-buscador-prod-index">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <div id="dropdown-index"></div>
+              </div> 
+        <!--      <div class="searchbar">
                 <input
                   class="search_input"
                   id="buscador-prod-index"
@@ -166,7 +178,8 @@
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </a>
                 <div id="dropdown-index"></div>
-              </div>
+              </div> 
+ -->
               <!--     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> -->
               <!--   <li class="nav-item dropdown">
@@ -183,7 +196,16 @@
                                     <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
                                 </ul>
                             </li> -->
-            </ul>
-          </div>
+         
+     <!--        
+          <div class="input-group rounded">
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <span class="input-group-text border-0" id="search-addon">
+    <i class="fas fa-search"></i>
+  </span>
+</div> -->
+</div>
+
+
         </div>
       </nav>

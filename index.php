@@ -188,13 +188,13 @@ include './vistas/head.php';
 
 </div>
 </section>
-      <!-- Blog preview section-->
+      <!-- Recetario-->
       <section class="py-5">
         <div class="px-5 my-5">
           <div class="row gx-5 justify-content-center">
             <div class="col-lg-8 col-xl-6">
               <div class="text-center wow animated zoomInDown">
-                <h2 class="fw-bolder">¡Pruebalo en tu cocina!</h2>
+                <h2 class="fw-bolder">¡Pruebalo en tu cocina nuestra recetas!</h2>
                 <p class="lead fw-normal text-muted mb-5">
                   La mejor calidad y sabor artesanal hasta tu mesa.
                 </p>
@@ -223,18 +223,50 @@ include './vistas/head.php';
                     </h5></a
                   >
                   <p class="card-text mb-0">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  Ingredientes:
+-Pan Birote
+-Queso chipotle
+-Mantequilla de La Pilarica
+-2 tomates
+-1/2 Cebolla blanca
+-2 Chile jalapeño
+-Sal al gusto
+-Frijoles Refritos
+
                   </p>
+
+
                 </div>
+
+
+
+
+
+
                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div class="d-flex align-items-end justify-content-between">
                     <div class="d-flex align-items-center">
+
+
+
+
+
+
+
+
+
+
                       <img
                         class="rounded-circle me-3"
                         src="assets/logo-resplandor-bco.png"
                         alt="..."
                       />
+
+
+
+
+
+
                       <div class="small">
                         <div class="fw-bold">Lacteos| La Pilarica</div>
                         <div class="text-muted">
@@ -246,6 +278,18 @@ include './vistas/head.php';
                 </div>
               </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="col-lg-3 mb-5 wow animated fadeInUp">
               <div class="card h-100 shadow border-0">
