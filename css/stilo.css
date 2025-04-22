@@ -595,3 +595,27 @@ margin-bottom: -5%;
   -moz-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
   box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
 }
+
+.login {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('../assets/new-cheese/chapata/chapata-SF.png');
+  background-size: cover;
+  background-position: center;
+  float: left;
+  clip-path: circle(40%);
+  shape-outside: circle(45%);
+  z-index: 1;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
