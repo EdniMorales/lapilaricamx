@@ -292,6 +292,8 @@
   transform: scale(1);
 }
 
+
+
 /*Banner*/
 /* 
 header.masthead {
@@ -348,6 +350,21 @@ header.masthead {
  */
 .categ{
 margin-bottom: -5%;
+}
+
+
+.masthead2{
+  width: 100%;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 250px;
+  background-image: url('../assets/new-cheese/bodegon/bodegon-productos.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -604,10 +621,10 @@ margin-bottom: -5%;
   background-image: url('../assets/new-cheese/chapata/chapata-SF.png');
   background-size: cover;
   background-position: center;
-  float: left;
-  clip-path: circle(40%);
-  shape-outside: circle(45%);
-  z-index: 1;
+/*   float: left; */
+  /* clip-path: circle(40%);
+  shape-outside: circle(45%); */
+  position: relative;
 }
 
 .login-heading {

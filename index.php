@@ -1,5 +1,4 @@
 
-
 <?php
 include './vistas/head.php';
 ?>
@@ -34,8 +33,6 @@ include './vistas/head.php';
           </div>
         </div>
       </header> -->
-
-
 <!-- Full Page Image Header with Vertically Centered Content -->
 <header class="masthead" >
   <div class="container h-100">
@@ -49,7 +46,6 @@ include './vistas/head.php';
     </div>
   </div>
 </header>
-
 <!-- Page Content -->
 <!-- <section class="py-5">
   <div class="container">
@@ -59,8 +55,6 @@ include './vistas/head.php';
       reprehenderit expedita.</p>
   </div>
 </section> -->
-
-
  <!-- Historia Don Fidel-->
  <section class="py-5">
   <div class="py-5 bg-light">
@@ -94,10 +88,6 @@ include './vistas/head.php';
       </div> 
     </div>
   </div>
-
-
-
-
 </section>
 <!-- Portfolio-->
 <section class="content-section" id="portfolio">
@@ -138,7 +128,6 @@ include './vistas/head.php';
                       </div>
                   </div>
                   <img class="img-fluid" src="assets/yogurt-foto-fresas.jpg" width="750" height="500"  alt="..." />
-
               </a>
           </div>
           <div class="col-lg-6">
@@ -156,10 +145,7 @@ include './vistas/head.php';
       </div>
   </div>
 </section>
-
-
-
-
+<!-- 
 <div class="container-fluid ps-md-0">
   <div class="row g-0">
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
@@ -169,8 +155,6 @@ include './vistas/head.php';
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">Welcome back!</h3>
-
-              <!-- Sign In Form -->
               <form>
                 <div class="form-floating mb-3">
                   <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -180,21 +164,18 @@ include './vistas/head.php';
                   <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                   <label for="floatingPassword">Password</label>
                 </div>
-
                 <div class="form-check mb-3">
                   <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
                   <label class="form-check-label" for="rememberPasswordCheck">
                     Remember password
                   </label>
                 </div>
-
                 <div class="d-grid">
                   <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Sign in</button>
                   <div class="text-center">
                     <a class="small" href="#">Forgot password?</a>
                   </div>
                 </div>
-
               </form>
             </div>
           </div>
@@ -202,23 +183,7 @@ include './vistas/head.php';
       </div>
     </div>
   </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div> -->
 <section>
 <div>
   <div class="parallax parallax-1">
@@ -227,31 +192,26 @@ include './vistas/head.php';
       <p>Explore the wonders of the great outdoors.</p>
     </div>
   </div>
-
   <div class="container py-5">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna vel auctor luctus, leo nunc tincidunt
       risus, id bibendum magna magna quis velit.</p>
   </div>
-
   <div class="parallax parallax-2">
     <div class="parallax-caption">
       <h3>Urban Landscapes</h3>
       <p>Discover the vibrant energy of modern cities.</p>
     </div>
   </div>
-
   <div class="container py-5">
     <p>Nullam vel mi vel risus rutrum consequat a vel dui. Aliquam erat volutpat. Sed consectetur turpis eget metus
       hendrerit, vel facilisis mauris venenatis.</p>
   </div>
-
   <div class="parallax parallax-3">
     <div class="parallax-caption">
       <h3>Architectural Wonders</h3>
       <p>Marvel at the stunning creations of human ingenuity.</p>
     </div>
   </div>
-
 </div>
 </section>
       <!-- Recetario-->
@@ -267,9 +227,7 @@ include './vistas/head.php';
               </div>
             </div>
           </div>
-
           <div class="row gx-5">
-
             <div class="col-lg-3 mb-5 wow animated fadeInUp">
               <div class="card h-100 shadow border-0">
                 <img
@@ -298,41 +256,16 @@ include './vistas/head.php';
                     -2 Chile jalapeño
                     -Sal al gusto
                     -Frijoles Refritos
-
                   </p>
-
-
                 </div>
-
-
-
-
-
-
                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div class="d-flex align-items-end justify-content-between">
                     <div class="d-flex align-items-center">
-
-
-
-
-
-
-
-
-
-
                       <img
                         class="rounded-circle me-3"
                         src="assets/logo-resplandor-bco.png"
                         alt="..."
                       />
-
-
-
-
-
-
                       <div class="small">
                         <div class="fw-bold">Lacteos| La Pilarica</div>
                         <div class="text-muted">
@@ -509,7 +442,6 @@ include './vistas/head.php';
               Elaborados 100% Artesanal
             </p>
           </div>
-
           <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4">
             <!-- justify-content-center -->
              <div class="flip-box">
@@ -572,9 +504,6 @@ include './vistas/head.php';
                 </div>
               </div>
             </div>
-  
-
-
             <div class="flip-box">
               <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                 <div class="flip-box-front text-center">
@@ -595,11 +524,6 @@ include './vistas/head.php';
                 </div>
               </div>
             </div>
-
-
-
-
-
             <div class="flip-box">
               <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                 <div class="flip-box-front text-center">
@@ -620,12 +544,6 @@ include './vistas/head.php';
                 </div>
               </div>
             </div>
-
-
-
-          
-
-
             <div class="flip-box">
               <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                 <div class="flip-box-front text-center">
@@ -646,9 +564,6 @@ include './vistas/head.php';
                 </div>
               </div>
             </div>
-
-
-
             <div class="flip-box">
               <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                 <div class="flip-box-front text-center">
@@ -669,11 +584,6 @@ include './vistas/head.php';
                 </div>
               </div>
             </div>
-
-
-
-
-          
             <div class="flip-box">
               <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                 <div class="flip-box-front text-center ">
@@ -694,9 +604,6 @@ include './vistas/head.php';
                 </div>
               </div>
             </div>
-
-
-
             <div class="flip-box">
               <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                 <div class="flip-box-front text-center">
@@ -717,10 +624,6 @@ include './vistas/head.php';
                 </div>
               </div>
             </div>
-
-
-
-
             <div class="flip-box">
               <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                 <div class="flip-box-front text-center">
@@ -741,12 +644,6 @@ include './vistas/head.php';
                 </div>
               </div>
             </div>
-
-
-
-
-
-
             <div class="col mb-5">
               <div class="text-center">
                 <img
@@ -758,7 +655,6 @@ include './vistas/head.php';
                             <div class="fst-italic text-muted">CTO</div> -->
               </div>
             </div>
-
             <div class="col mb-5">
               <div class="text-center">
                 <img
@@ -770,7 +666,6 @@ include './vistas/head.php';
                           <div class="fst-italic text-muted">CTO</div> -->
               </div>
             </div>
-
             <div class="col mb-5">
               <div class="text-center">
                 <img
@@ -782,7 +677,6 @@ include './vistas/head.php';
                         <div class="fst-italic text-muted">CTO</div> -->
               </div>
             </div>
-
             <div class="col mb-5">
               <div class="text-center">
                 <img
@@ -794,7 +688,6 @@ include './vistas/head.php';
                       <div class="fst-italic text-muted">CTO</div> -->
               </div>
             </div>
-
             <div class="col mb-5">
               <div class="text-center">
                 <img
@@ -817,7 +710,6 @@ include './vistas/head.php';
                   <div class="fst-italic text-muted">CTO</div> -->
               </div>
             </div>
-
             <div class="col mb-5">
               <div class="text-center">
                 <img
@@ -829,7 +721,6 @@ include './vistas/head.php';
                 <div class="fst-italic text-muted">CTO</div> -->
               </div>
             </div>
-
             <div class="col mb-5">
               <div class="text-center">
                 <img
@@ -841,7 +732,6 @@ include './vistas/head.php';
               <div class="fst-italic text-muted">CTO</div> -->
               </div>
             </div>
-
             <div class="col mb-5">
               <div class="text-center">
                 <img
@@ -865,7 +755,6 @@ include './vistas/head.php';
           <div class="fst-italic text-muted">CTO</div> -->
               </div>
             </div>
-
             <div class="col mb-5">
               <div class="text-center">
                 <img

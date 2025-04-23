@@ -80,14 +80,10 @@
                   data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  >Productos</a
-                >
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="navbarDropdownBlog"
-                >
+                  >Especialidades</a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                   <li>
-                    <a class="dropdown-item" href="blog-home.html"
+                    <a class="dropdown-item" href="productos.php"
                       >Quesos Blancos</a
                     >
                   </li>

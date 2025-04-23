@@ -48,7 +48,6 @@ window.addEventListener('DOMContentLoaded', event => {
             menuToggleTimes.classList.add('fa-bars');
         }
     }
-
     // Scroll to top button appear
     document.addEventListener('scroll', () => {
         const scrollToTop = document.body.querySelector('.scroll-to-top');
