@@ -1,0 +1,18 @@
+<ifModule mod_rewrite.c>
+
+#activar rewrite
+RewriteEngine on
+#ErrorDocument 404 http://localhost:3333/error/
+
+#comprobar las url que no sea un directorio o un fichero
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+#regla de escritura
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+
+RewriteCond %{HTTP_HOST} ^pilarica\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://pilarica.mx/$1 [R,L]
+
+</ifModule>
