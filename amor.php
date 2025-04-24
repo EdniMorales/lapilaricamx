@@ -4,6 +4,8 @@
 include './vistas/head.php';
 ?>
            
+
+           
            <!-- Encabezado-->
             <header class="masthead1 py-5">
                 <div class="container px-5">
