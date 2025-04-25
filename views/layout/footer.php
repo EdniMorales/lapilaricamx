@@ -235,6 +235,25 @@
       });
     </script>
 
+    <!-- Logica del buscador -->
+    <script type="module">
+      import * as trriggers from './backend/trigger.js';  // Importar las funciones desde el módulo
+
+      // Asocia los eventos con los elementos del HTML
+      document.getElementById("buscador-prod-index").addEventListener("input",function() {
+        const buttonString = "buscador-prod-index";
+        const pageString = "index";
+        const widgetString = "dropdown-index";
+        trriggers.ProductSearch(buttonString,pageString,widgetString);
+      }); // Barra de navegación
+      document.getElementById("button-buscador-prod-index").addEventListener("click", function() {
+        const buttonString = "buscador-prod-index";  // El string que quieres pasar
+        const pageString = "index";
+        const widgetString = "dropdown-index";
+        trriggers.ProductSearch(buttonString,pageString,widgetString); // Pasa el string a la función
+      });// Botón de búsqueda
+    </script>
+
 
 <!-- <script>
   alert('La resolución de pantalla que tienes en este momento es de: ' + screen.width + ' x ' + screen.height)
