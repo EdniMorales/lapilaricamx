@@ -2,16 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$servername ="";
-$username ="";
-$password ="";
-$dbname = "";
-$port =3306;
+require '../config/db.php';
 
 // Crear la conexión
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
-// Establecer la codificación de caracteres de la conexión a UTF-8
-$conn->set_charset("utf8mb4");
+$conn = Database::connect();
 
 // Comprobar si hubo un error de conexión
 if ($conn->connect_error) {
