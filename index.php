@@ -46,18 +46,5 @@ if(class_exists($nombreControlador)){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 require_once 'views/layout/footer.php';
 ?>
