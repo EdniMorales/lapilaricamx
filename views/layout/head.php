@@ -171,7 +171,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?= base_url ?>solo/index"
+                <a class="nav-link" href="<?= base_url ?>Solo/index"
                   >Solo el Amor Supera la Leche</a
                 >
               </li>
