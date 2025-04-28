@@ -71,7 +71,7 @@
             <div class="d-flex align-items-center justify-content-center">
               <img 
                 class="rounded-circle me-3"
-                src="assets/40ani-1.png"
+                src="<?= base_url ?>assets/40ani-1.png"
                 alt="..."
               />
               <div class="fw-bold">
@@ -102,7 +102,7 @@
                           <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
                       </div>
                   </div>
-                  <img class="img-fluid" src="assets/quesos-maduros.jpg" width="750" height="500" alt="..."/>
+                  <img class="img-fluid" src="<?= base_url ?>assets/quesos-maduros.jpg" width="750" height="500" alt="..."/>
               </a>
           </div>
           <div class="col-lg-6">
@@ -113,7 +113,7 @@
                           <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
                       </div>
                   </div>
-                  <img class="img-fluid" src="assets/quesos-maduros.jpg" width="750" height="500"  alt="..." />
+                  <img class="img-fluid" src="<?= base_url ?>assets/quesos-maduros.jpg" width="750" height="500"  alt="..." />
               </a>
           </div>
           <div class="col-lg-6">
@@ -124,7 +124,7 @@
                           <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
                       </div>
                   </div>
-                  <img class="img-fluid" src="assets/yogurt-foto-fresas.jpg" width="750" height="500"  alt="..." />
+                  <img class="img-fluid" src="<?= base_url ?>assets/yogurt-foto-fresas.jpg" width="750" height="500"  alt="..." />
               </a>
           </div>
           <div class="col-lg-6">
@@ -135,7 +135,7 @@
                           <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
                       </div>
                   </div>
-                  <img class="img-fluid" src="assets/pays.jpg" width="750" height="500"  alt="..." />
+                  <img class="img-fluid" src="<?= base_url ?>assets/pays.jpg" width="750" height="500"  alt="..." />
 
               </a>
           </div>
@@ -229,7 +229,7 @@
               <div class="card h-100 shadow border-0">
                 <img
                   class="card-img-top"
-                  src="assets/cuadroRA.png"
+                  src="<?= base_url ?>assets/cuadroRA.png"
                   alt="..."
                 />
                 <div class="card-body p-4">
@@ -260,7 +260,7 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="rounded-circle me-3"
-                        src="assets/logo-resplandor-bco.png"
+                        src="<?= base_url ?>assets/logo-resplandor-bco.png"
                         alt="..."
                       />
                       <div class="small">
@@ -291,7 +291,7 @@
               <div class="card h-100 shadow border-0">
                 <img
                   class="card-img-top"
-                  src="assets/credul.jpg"
+                  src="<?= base_url ?>assets/credul.jpg"
                   alt="..."
                 />
                 <div class="card-body p-4">
@@ -314,7 +314,7 @@
                     <div class="d-flex align-items-center">  <!--rounded-circle me-3-->
                       <img
                         class=""  
-                        src="assets/logo-resplandor-bco.png"
+                        src="<?= base_url ?>assets/logo-resplandor-bco.png"
                         alt="..."
                       />
                       <div class="small">
@@ -333,7 +333,7 @@
               <div class="card h-100 shadow border-0">
                 <img
                   class="card-img-top"
-                  src="assets/cuadroMotz.png"
+                  src="<?= base_url ?>assets/cuadroMotz.png"
                   alt="..."
                 />
                 <div class="card-body p-4">
@@ -356,7 +356,7 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="rounded-circle me-3"
-                        src="assets/logo-resplandor-bco.png"
+                        src="<?= base_url ?>assets/logo-resplandor-bco.png"
                         alt="..."
                       />
                       <div class="small">
@@ -374,7 +374,7 @@
               <div class="card h-100 shadow border-0"><!-- hover-zoom--brightness -->
                 <img
                   class="card-img-top"
-                  src="assets/cuadre-template.png"
+                  src="<?= base_url ?>assets/cuadre-template.png"
                   alt="..."
                 />
                 <div class="card-body p-4">
@@ -398,7 +398,7 @@
                     <div class="d-flex align-items-center">
                       <img
                         class="rounded-circle me-3"
-                        src="assets/logo-resplandor-bco.png"
+                        src="<?= base_url ?>assets/logo-resplandor-bco.png"
                         alt="..."
                       />
                       <div class="small">
@@ -446,7 +446,7 @@
               <div class="flip-box-front text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/oaxacabn.png"
+                  src="<?= base_url ?>assets/oaxacabn.png"
                   alt="..."
                 />
                 <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -455,7 +455,7 @@
               <div class="flip-box-back">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/oaxaca-01.png"
+                  src="<?= base_url ?>assets/oaxaca-01.png"
                   alt="..."
                 />
               </div>
@@ -466,7 +466,7 @@
                 <div class="flip-box-front text-center">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/panelabn.png"
+                    src="<?= base_url ?>assets/panelabn.png"
                     alt="..."
                   />
                   <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -475,7 +475,7 @@
                 <div class="flip-box-back">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/Panela-01.png"
+                    src="<?= base_url ?>assets/Panela-01.png"
                     alt="..."
                   />
                 </div>
@@ -486,7 +486,7 @@
                 <div class="flip-box-front text-center">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/cremabn.png"
+                    src="<?= base_url ?>assets/cremabn.png"
                     alt="..."
                   />
                   <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -495,7 +495,7 @@
                 <div class="flip-box-back">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/cremabn.png"
+                    src="<?= base_url ?>assets/cremabn.png"
                     alt="..."
                   />
                 </div>
@@ -506,7 +506,7 @@
                 <div class="flip-box-front text-center">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/mozzarellabn.png"
+                    src="<?= base_url ?>assets/mozzarellabn.png"
                     alt="..."
                   />
                   <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -515,7 +515,7 @@
                 <div class="flip-box-back">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/Logo-MozzarellaD.png"
+                    src="<?= base_url ?>assets/Logo-MozzarellaD.png"
                     alt="..."
                   />
                 </div>
@@ -526,7 +526,7 @@
                 <div class="flip-box-front text-center">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/gustodelicatobn.png"
+                    src="<?= base_url ?>assets/gustodelicatobn.png"
                     alt="..."
                   />
                   <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -535,7 +535,7 @@
                 <div class="flip-box-back">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/Gusto-01.png"
+                    src="<?= base_url ?>assets/Gusto-01.png"
                     alt="..."
                   />
                 </div>
@@ -546,7 +546,7 @@
                 <div class="flip-box-front text-center">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/mashiegobn.png"
+                    src="<?= base_url ?>assets/mashiegobn.png"
                     alt="..."
                   />
                   <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -555,7 +555,7 @@
                 <div class="flip-box-back">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/manchego-01.png"
+                    src="<?= base_url ?>assets/manchego-01.png"
                     alt="..."
                   />
                 </div>
@@ -566,7 +566,7 @@
                 <div class="flip-box-front text-center">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/RancheroGourmetbn.png"
+                    src="<?= base_url ?>assets/RancheroGourmetbn.png"
                     alt="..."
                   />
                   <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -575,7 +575,7 @@
                 <div class="flip-box-back">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/RancheroGourmetbn.png"
+                    src="<?= base_url ?>assets/RancheroGourmetbn.png"
                     alt="..."
                   />
                 </div>
@@ -586,7 +586,7 @@
                 <div class="flip-box-front text-center ">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/requesonbn.png"
+                    src="<?= base_url ?>assets/requesonbn.png"
                     alt="..."
                   />
                   <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -595,7 +595,7 @@
                 <div class="flip-box-back">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/logo-requeson.png"
+                    src="<?= base_url ?>assets/logo-requeson.png"
                     alt="..."
                   />
                 </div>
@@ -606,7 +606,7 @@
                 <div class="flip-box-front text-center">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/rancherobn.png"
+                    src="<?= base_url ?>assets/rancherobn.png"
                     alt="..."
                   />
                   <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -615,7 +615,7 @@
                 <div class="flip-box-back">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/Ranchero-01.png"
+                    src="<?= base_url ?>assets/Ranchero-01.png"
                     alt="..."
                   />
                 </div>
@@ -626,7 +626,7 @@
                 <div class="flip-box-front text-center">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/ralladobn.png"
+                    src="<?= base_url ?>assets/ralladobn.png"
                     alt="..."
                   />
                   <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
@@ -635,7 +635,7 @@
                 <div class="flip-box-back">
                   <img
                     class="img-fluid mb-4 px-4"
-                    src="assets/Rallado-01.png"
+                    src="<?= base_url ?>assets/Rallado-01.png"
                     alt="..."
                   />
                 </div>
@@ -645,7 +645,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/frescobn.png"
+                  src="<?= base_url ?>assets/frescobn.png"
                   alt="..."
                 />
                 <!--    <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -656,7 +656,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/Cotijabn.png"
+                  src="<?= base_url ?>assets/Cotijabn.png"
                   alt="..."
                 />
                 <!--         <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -667,7 +667,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/doble_crema_bn.png"
+                  src="<?= base_url ?>assets/doble_crema_bn.png"
                   alt="..."
                 />
                 <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -678,7 +678,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/chihuahuabn.png"
+                  src="<?= base_url ?>assets/chihuahuabn.png"
                   alt="..."
                 />
                 <!--         <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -689,7 +689,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/capressebn.png"
+                  src="<?= base_url ?>assets/capressebn.png"
                   alt="..."
                 />
                 <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -700,7 +700,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/padellabn.png"
+                  src="<?= base_url ?>assets/padellabn.png"
                   alt="..."
                 />
                 <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -711,7 +711,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/Botanerobn.png"
+                  src="<?= base_url ?>assets/Botanerobn.png"
                   alt="..."
                 />
                 <!--       <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -722,7 +722,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/fresas_con_crema_bn.png"
+                  src="<?= base_url ?>assets/fresas_con_crema_bn.png"
                   alt="..."
                 />
                 <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -733,7 +733,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/duraznos_con_crema_bn.png"
+                  src="<?= base_url ?>assets/duraznos_con_crema_bn.png"
                   alt="..."
                 />
                 <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -745,7 +745,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/Gelatina-logo-bn.png"
+                  src="<?= base_url ?>assets/Gelatina-logo-bn.png"
                   alt="..."
                 />
                 <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -756,7 +756,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/cajetabn.png"
+                  src="<?= base_url ?>assets/cajetabn.png"
                   alt="..."
                 />
                 <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -767,7 +767,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/crema_fresas_bn.png"
+                  src="<?= base_url ?>assets/crema_fresas_bn.png"
                   alt="..."
                 />
                 <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -778,7 +778,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/Logo-Pay-bn.png"
+                  src="<?= base_url ?>assets/Logo-Pay-bn.png"
                   alt="..."
                 />
                 <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
@@ -789,7 +789,7 @@
               <div class="text-center">
                 <img
                   class="img-fluid mb-4 px-4"
-                  src="assets/Yoghurt-logo-bn.png"
+                  src="<?= base_url ?>assets/Yoghurt-logo-bn.png"
                   alt="..."
                 />
                 <!--   <h5 class="fw-bolder">Malvina Cilla</h5>

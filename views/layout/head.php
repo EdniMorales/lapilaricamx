@@ -77,9 +77,9 @@
       >
         <!-- sticky-top -->
         <div class="container px-5">
-          <a class="navbar-brand" href="index.php">
+          <a class="navbar-brand" href="<?= base_url ?>Principal/index">
             <img
-              src="assets/logo-resplandor-bco.png"
+              src="<?= base_url ?>assets/logo-resplandor-bco.png"
               alt="Logo"
               width="150"
               height="100"
@@ -112,7 +112,7 @@
                   >Especialidades</a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                   <li>
-                    <a class="dropdown-item" href="productos.php"
+                    <a class="dropdown-item" href="<?= base_url ?>Quesosblancos/index"
                       >Quesos Blancos</a
                     >
                   </li>

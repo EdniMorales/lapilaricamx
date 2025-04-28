@@ -2,13 +2,7 @@
 
 require_once 'autoload.php';
 require_once 'config/parameters.php';
-
-
-
 require_once 'views/layout/head.php'; 
-
-
-
 
 function show_error(){
     $error = new ErrorController();
@@ -41,10 +35,6 @@ if(class_exists($nombreControlador)){
 }else{
     show_error();
 }
-
-
-
-
 
 require_once 'views/layout/footer.php';
 ?>
