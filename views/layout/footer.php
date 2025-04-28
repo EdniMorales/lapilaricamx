@@ -237,7 +237,7 @@
 
     <!-- Logica del buscador -->
     <script type="module">
-      import * as trriggers from './backend/trigger.js';  // Importar las funciones desde el módulo
+      import * as trriggers from '<?= base_url ?>backend/trigger.js';  // Importar las funciones desde el módulo
 
       // Asocia los eventos con los elementos del HTML
       document.getElementById("buscador-prod-index").addEventListener("input",function() {

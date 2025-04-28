@@ -1,8 +1,12 @@
 <?php
 
 require_once 'autoload.php';
+require_once 'config/db.php'; // conexion a la base de datos
 require_once 'config/parameters.php';
-require_once 'views/layout/head.php'; 
+require_once 'php/backend.php'; 
+/* require_once 'views/layout/head.php';  */// cabecera de la pagina
+
+
 
 function show_error(){
     $error = new ErrorController();
