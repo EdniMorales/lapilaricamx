@@ -228,32 +228,32 @@
             <div class="col-lg-3 mb-5 wow animated fadeInUp">
               <div class="card h-100 shadow border-0">
                 <img
-                  class="card-img-top"
+                  class="card-img-top-1"
                   src="<?= base_url ?>assets/cuadroRA.png"
                   alt="..."
                 />
-                <div class="card-body p-4">
-                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                <div class="card-body p-4 text-center">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2 ">
                     Especialidad Pilarica
                   </div>
-                  <a
-                    class="text-decoration-none link-dark stretched-link"
-                    href="#!"
-                    ><h5 class="card-title mb-3">
-                      Molletes de Queso Chipotle
-                    </h5></a
-                  >
-                  <p class="card-text mb-0">
+                  <a class="text-decoration-none link-dark stretched-link" href="#!">
+                    <h5 class="card-title mb-3 text-center">
+                      Molletes de Queso Chipotle</h5>
+                  </a>
+                  <p class="card-text mb-0 text-center">
                   Ingredientes:
-                    -Pan Birote
-                    -Queso chipotle
-                    -Mantequilla de La Pilarica
-                    -2 tomates
-                    -1/2 Cebolla blanca
-                    -2 Chile jalapeño
-                    -Sal al gusto
-                    -Frijoles Refritos
                   </p>
+                  <ul class="list-unstyled list-group">  
+                    <li class="list-group-item">-Pan Birote</li>
+                    <li class="list-group-item">-Queso chipotle</li>
+                    <li class="list-group-item">-Mantequilla de La Pilarica</li>
+                    <li class="list-group-item">-2 tomates</li>
+                    <li class="list-group-item">-1/2 Cebolla blanca</li>
+                    <li class="list-group-item">-2 Chiles jalapeños</li>
+                    <li class="list-group-item">-1/2 Cebolla blanca</li>
+                    <li class="list-group-item">-Sal al gusto</li>
+                    <li class="list-group-item">-Frijoles Refritos</li>
+                  </ul>
                 </div>
                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div class="d-flex align-items-end justify-content-between">
@@ -274,23 +274,10 @@
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
             <div class="col-lg-3 mb-5 wow animated fadeInUp">
               <div class="card h-100 shadow border-0">
                 <img
-                  class="card-img-top"
+                  class="card-img-top-1"
                   src="<?= base_url ?>assets/credul.jpg"
                   alt="..."
                 />
@@ -332,7 +319,7 @@
             <div class="col-lg-3 mb-5 wow animated fadeInUp">
               <div class="card h-100 shadow border-0">
                 <img
-                  class="card-img-top"
+                  class="card-img-top-1"
                   src="<?= base_url ?>assets/cuadroMotz.png"
                   alt="..."
                 />
@@ -373,7 +360,7 @@
             <div class="col-lg-3 mb-5 wow animated fadeInUp">
               <div class="card h-100 shadow border-0"><!-- hover-zoom--brightness -->
                 <img
-                  class="card-img-top"
+                  class="card-img-top-1"
                   src="<?= base_url ?>assets/cuadre-template.png"
                   alt="..."
                 />

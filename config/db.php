@@ -1,5 +1,5 @@
 <?php
-/* 
+/* xs
  * creamos la conexion a la base de datos en una clase estatica
  */
 class Database{
