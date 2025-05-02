@@ -185,7 +185,7 @@
 <div>
   <div class="parallax parallax-1">
     <div class="parallax-caption">
-      <h3>Nature's Beauty</h3>
+      <h1 class="princess-sofia-regular">Provolone</h1>
       <p>Explore the wonders of the great outdoors.</p>
     </div>
   </div>
@@ -219,7 +219,7 @@
               <div class="text-center wow animated zoomInDown">
                 <h2 class="fw-bolder">¡Pruebalo en tu cocina nuestra recetas!</h2>
                 <p class="lead fw-normal text-muted mb-5">
-                  La mejor calidad y sabor artesanal hasta tu mesa.
+                 Con nuestros productos puedes preparar recetas deliciosas y saludables para toda la familia.
                 </p>
               </div>
             </div>
@@ -227,23 +227,17 @@
           <div class="row gx-5">
             <div class="col-lg-3 mb-5 wow animated fadeInUp">
               <div class="card h-100 shadow border-0">
-                <img
-                  class="card-img-top-1"
-                  src="<?= base_url ?>assets/cuadroRA.png"
-                  alt="..."
-                />
-                <div class="card-body p-4 text-center">
-                  <div class="badge bg-primary bg-gradient rounded-pill mb-2 ">
+                <img class="card-img-top-1" src="<?= base_url ?>assets/cuadroRA.png" alt="..."/>
+                <div class="card-body p-4 text-delius">              
+                  <a class="text-decoration-none link-dark stretched-link" href="#!">
+                    <h4 class="card-title mb-3">
+                      Molletes de Queso Chipotle</h4>
+                  </a>
+                  <div class="badge bg-warning bg-gradient rounded-pill mb-2 ">
                     Especialidad Pilarica
                   </div>
-                  <a class="text-decoration-none link-dark stretched-link" href="#!">
-                    <h5 class="card-title mb-3 text-center">
-                      Molletes de Queso Chipotle</h5>
-                  </a>
-                  <p class="card-text mb-0 text-center">
-                  Ingredientes:
-                  </p>
                   <ul class="list-unstyled list-group">  
+                    <li class="list-group-item"><strong>Ingredientes:</strong></li>
                     <li class="list-group-item">-Pan Birote</li>
                     <li class="list-group-item">-Queso chipotle</li>
                     <li class="list-group-item">-Mantequilla de La Pilarica</li>
@@ -257,14 +251,10 @@
                 </div>
                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div class="d-flex align-items-end justify-content-between">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="rounded-circle me-3"
-                        src="<?= base_url ?>assets/logo-resplandor-bco.png"
-                        alt="..."
-                      />
+                    <div class="d-flex align-items-center">         
+                      <img class="rounded-circle me-3" src="<?= base_url ?>assets/logo-resplandor-bco.png" alt="..."/>       
                       <div class="small">
-                        <div class="fw-bold">Lacteos| La Pilarica</div>
+                        <div class="fw-bold">Lacteos | La Pilarica</div>
                         <div class="text-muted">
                           March 12, 2025 &middot; 6 min read
                         </div>
@@ -276,38 +266,109 @@
             </div>
             <div class="col-lg-3 mb-5 wow animated fadeInUp">
               <div class="card h-100 shadow border-0">
-                <img
-                  class="card-img-top-1"
-                  src="<?= base_url ?>assets/credul.jpg"
-                  alt="..."
-                />
-                <div class="card-body p-4">
-                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                <img class="card-img-top-1" src="<?= base_url ?>assets/cuadroRA.png" alt="..."/>
+                <div class="card-body p-4 text-delius">              
+                  <a class="text-decoration-none link-dark stretched-link" href="#!">
+                    <h4 class="card-title mb-3">
+                    Bizcocho de Mantequilla</h4>
+                  </a>
+                  <div class="badge bg-warning bg-gradient rounded-pill mb-2 ">
                     Especialidad Pilarica
                   </div>
-                  <a
-                    class="text-decoration-none link-dark stretched-link"
-                    href="#!"
-                    ><h5 class="card-title mb-3">Bizcocho de Mantequilla</h5></a
-                  >
-                  <p class="card-text mb-0">
-                    This text is a bit longer to illustrate the adaptive height
-                    of each card. Some quick example text to build on the card
-                    title and make up the bulk of the card's content.
-                  </p>
+                  <ul class="list-unstyled list-group">  
+                    <li class="list-group-item"><strong>Ingredientes:</strong></li>
+                    <li class="list-group-item">-220g de harina</li>
+                    <li class="list-group-item">-100g de azúcar</li>
+                    <li class="list-group-item">-150 gr de mantequilla</li>
+                    <li class="list-group-item">-3 huevos</li>
+                    <li class="list-group-item">-½ sobre de levadura</li>
+                  </ul>
                 </div>
                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div class="d-flex align-items-end justify-content-between">
-                    <div class="d-flex align-items-center">  <!--rounded-circle me-3-->
-                      <img
-                        class=""  
-                        src="<?= base_url ?>assets/logo-resplandor-bco.png"
-                        alt="..."
-                      />
+                    <div class="d-flex align-items-center">         
+                      <img class="rounded-circle me-3" src="<?= base_url ?>assets/logo-resplandor-bco.png" alt="..."/>       
                       <div class="small">
                         <div class="fw-bold">Lacteos | La Pilarica</div>
                         <div class="text-muted">
-                          March 23, 2025 &middot; 4 min read
+                          March 12, 2025 &middot; 6 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-5 wow animated fadeInUp">
+              <div class="card h-100 shadow border-0">
+                <img class="card-img-top-1" src="<?= base_url ?>assets/cuadroRA.png" alt="..."/>
+                <div class="card-body p-4 text-delius">              
+                  <a class="text-decoration-none link-dark stretched-link" href="#!">
+                    <h4 class="card-title mb-3">
+                    Spaghetti Hawaiano</h4>
+                  </a>
+                  <div class="badge bg-warning bg-gradient rounded-pill mb-2 ">
+                    Especialidad Pilarica
+                  </div>
+                  <ul class="list-unstyled list-group">  
+                    <li class="list-group-item"><strong>Ingredientes:</strong></li>
+                    <li class="list-group-item">-500 gramos de spaghetti</li>
+                    <li class="list-group-item">-750 ml Crema</li>
+                    <li class="list-group-item">-250 gr Jambón</li>
+                    <li class="list-group-item">-Lata piña en almíbar picada</li>
+                    <li class="list-group-item">-3 cucharadas de mantequilla, en cubitos</li>
+                    <li class="list-group-item">-1/4 tazas de perejil, finamente picado</li>
+                    <li class="list-group-item">-Sal al gusto</li>
+                  </ul>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">         
+                      <img class="rounded-circle me-3" src="<?= base_url ?>assets/logo-resplandor-bco.png" alt="..."/>       
+                      <div class="small">
+                        <div class="fw-bold">Lacteos | La Pilarica</div>
+                        <div class="text-muted">
+                          March 12, 2025 &middot; 6 min read
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 mb-5 wow animated fadeInUp">
+              
+              <div class="card h-100 shadow border-0">
+                <img class="card-img-top-1" src="<?= base_url ?>assets/cuadroRA.png" alt="..."/>
+
+
+
+                
+                <div class="card-body p-4 text-delius">              
+                    <h4 class="card-title mb-3">
+                    Galletas de Naranja con Mantequilla </h4>
+                  <div class="badge bg-warning bg-gradient rounded-pill mb-2 ">
+                    Especialidad Pilarica
+                  </div>
+                  <ul class="list-unstyled list-group">  
+                    <li class="list-group-item"><strong>Ingredientes:</strong></li>
+                    <li class="list-group-item">-125 g de harina de trigo</li>
+                    <li class="list-group-item">-80 g de mantequilla a temperatura ambiente</li>
+                    <li class="list-group-item">-60 g de azúcar (50 g para la masa y 10 g para el rebozado)</li>
+                    <li class="list-group-item">-1 pizca de sal</li>
+                    <li class="list-group-item">-1 cucharada de ralladura de naranja</li>
+                    <li class="list-group-item">-1 yema de huevo</li>
+                  </ul>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">         
+                      <img class="rounded-circle me-3" src="<?= base_url ?>assets/logo-resplandor-bco.png" alt="..."/>       
+                      <div class="small">
+                        <div class="fw-bold">Lacteos | La Pilarica</div>
+                        <div class="text-muted">
+                          March 12, 2025 &middot; 6 min read
                         </div>
                       </div>
                     </div>
@@ -316,92 +377,38 @@
               </div>
             </div>
 
-            <div class="col-lg-3 mb-5 wow animated fadeInUp">
-              <div class="card h-100 shadow border-0">
-                <img
-                  class="card-img-top-1"
-                  src="<?= base_url ?>assets/cuadroMotz.png"
-                  alt="..."
-                />
-                <div class="card-body p-4">
-                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">
-                    Especialidad Pilarica
-                  </div>
-                  <a
-                    class="text-decoration-none link-dark stretched-link"
-                    href="#!"
-                    ><h5 class="card-title mb-3">Spaghetti Hawaiano</h5></a
-                  >
-                  <p class="card-text mb-0">
-                    This text is a bit longer to illustrate the adaptive height
-                    of each card. Some quick example text to build on the card
-                    title and make up the bulk of the card's content.
-                  </p>
-                </div>
-                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                  <div class="d-flex align-items-end justify-content-between">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="rounded-circle me-3"
-                        src="<?= base_url ?>assets/logo-resplandor-bco.png"
-                        alt="..."
-                      />
-                      <div class="small">
-                        <div class="fw-bold">Lacteos | La Pilarica</div>
-                        <div class="text-muted">
-                          March 23, 2025 &middot; 4 min read
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 mb-5 wow animated fadeInUp">
-              <div class="card h-100 shadow border-0"><!-- hover-zoom--brightness -->
-                <img
-                  class="card-img-top-1"
-                  src="<?= base_url ?>assets/cuadre-template.png"
-                  alt="..."
-                />
-                <div class="card-body p-4">
-                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">
-                    Especialidad Pilarica
-                  </div>
-                  <a
-                    class="text-decoration-none link-dark stretched-link"
-                    href="#!"
-                    ><h5 class="card-title mb-3">
-                      Galletas de Naranja con Mantequilla (Pilarica)
-                    </h5></a
-                  >
-                  <p class="card-text mb-0">
-                    Some more quick example text to build on the card title and
-                    make up the bulk of the card's content.
-                  </p>
-                </div>
-                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                  <div class="d-flex align-items-end justify-content-between">
-                    <div class="d-flex align-items-center">
-                      <img
-                        class="rounded-circle me-3"
-                        src="<?= base_url ?>assets/logo-resplandor-bco.png"
-                        alt="..."
-                      />
-                      <div class="small">
-                        <div class="fw-bold">Lacteos| La Pilarica</div>
-                        <div class="text-muted">
-                          April 2, 2025 &middot; 10 min read
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
           </div>
         </div>
       </section>
+
+                      <!-- Botón que activa el modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">
+  Abrir Modal
+</button>
+
+<!-- Estructura del Modal -->
+<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Encabezado del Modal -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Título del Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Cuerpo del Modal -->
+      <div class="modal-body">
+        <p>Contenido del modal va aquí...</p>
+      </div>
+      <!-- Pie del Modal -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
 
  
   <!--     <h1>3D Flip Box (Vertical)</h1>
@@ -423,7 +430,7 @@
           <div class="text-center">
             <h2 class="fw-bolder">Todas nuestras especialidades</h2>
             <p class="lead fw-normal text-muted mb-5">
-              Elaborados 100% Artesanal
+            La mejor calidad y sabor artesanal hasta tu mesa | Elaborados 100% Artesanal
             </p>
           </div>
           <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4">
