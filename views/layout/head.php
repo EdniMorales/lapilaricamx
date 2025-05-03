@@ -40,7 +40,7 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="<?= base_url ?>js/scripts.js"></script>
+    <script type="module" src='<?= base_url ?>js/scripts.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -59,13 +59,7 @@
     </script>
 
 
-
-
-   
-   
-
-
-   
+  
   </head>
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
@@ -110,40 +104,7 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                   >Especialidades</a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                  <li>
-                    <a class="dropdown-item" href="<?= base_url ?>Quesosblancos/index"
-                      >Quesos Blancos</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-post.html"
-                      >Quesos Amarillos</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-post.html"
-                      >Quesos Gourmet</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-post.html">Cremas</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-post.html"
-                      >Mantequillas</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-post.html">Postres</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-post.html">Yogurth</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-post.html">Ricottin</a>
-                  </li>
-                </ul>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog" id="Categorias"></ul>
                 <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                   <a class="dropdown-item" href="#">Action</a>
                                   <a class="dropdown-item" href="#">Another action</a>
