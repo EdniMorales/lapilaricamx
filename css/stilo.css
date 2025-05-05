@@ -299,8 +299,6 @@ margin-bottom: -5%;
 .flip-box-back {
   transform: rotateX(180deg);
 }
-
-
 .dropdownList:hover a{
   background-color: #f1f1f1;
   text-decoration: none;
@@ -309,9 +307,18 @@ margin-bottom: -5%;
   text-align: left;
   font-size: 50px;
 }
-.dropdownList{
+/* .dropdownList{
   color: black;
   background-color: black;
+} */
+ .dropdownList a{
+  color: #1b1295;
+  background-color: #1b1295;
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+
 }
 .hover-zoom--brightness img {
   transition: transform 2s, filter 1.5s ease-in-out;
