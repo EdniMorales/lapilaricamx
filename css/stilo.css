@@ -1,142 +1,102 @@
-/* #video_background {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 250px;
-    height: 250px;
-    z-index: -1000;
-    overflow: hidden;
-    }
-/*  #video_pattern {
-    background:#fff;
-    position: fixed;
-    opacity: 0.8;a
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    } */
-/* Primer Estilo*/
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/*     @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'); */
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
-
-
 
 .poppins-thin {
   font-family: "Poppins", serif;
   font-weight: 100;
   font-style: normal;
 }
-
 .poppins-extralight {
   font-family: "Poppins", serif;
   font-weight: 200;
   font-style: normal;
-  
 }
-
 .poppins-light {
   font-family: "Poppins", serif;
   font-weight: 300;
   font-style: normal;
 }
-
 .poppins-regular {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .poppins-medium {
   font-family: "Poppins", serif;
   font-weight: 500;
   font-style: normal;
 }
-
 .poppins-semibold {
   font-family: "Poppins", serif;
   font-weight: 600;
   font-style: normal;
 }
-
 .poppins-bold {
   font-family: "Poppins", serif;
   font-weight: 700;
   font-style: normal;
 }
-
 .poppins-extrabold {
   font-family: "Poppins", serif;
   font-weight: 800;
   font-style: normal;
 }
-
 .poppins-black {
   font-family: "Poppins", serif;
   font-weight: 900;
   font-style: normal;
 }
-
 .poppins-thin-italic {
   font-family: "Poppins", serif;
   font-weight: 100;
   font-style: italic;
 }
-
 .poppins-extralight-italic {
   font-family: "Poppins", serif;
   font-weight: 200;
   font-style: italic;
 }
-
 .poppins-light-italic {
   font-family: "Poppins", serif;
   font-weight: 300;
   font-style: italic;
 }
-
 .poppins-regular-italic {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: italic;
 }
-
 .poppins-medium-italic {
   font-family: "Poppins", serif;
   font-weight: 500;
   font-style: italic;
 }
-
 .poppins-semibold-italic {
   font-family: "Poppins", serif;
   font-weight: 600;
   font-style: italic;
 }
-
 .poppins-bold-italic {
   font-family: "Poppins", serif;
   font-weight: 700;
   font-style: italic;
 }
-
 .poppins-extrabold-italic {
   font-family: "Poppins", serif;
   font-weight: 800;
   font-style: italic;
 }
-
 .poppins-black-italic {
   font-family: "Poppins", serif;
   font-weight: 900;
   font-style: italic;
 }
-
-
-
 .just-another-hand-regular {
   font-family: "Just Another Hand", cursive;
   font-weight: 400;
@@ -164,18 +124,13 @@
 }
 * {
   font-family: "Poppins", serif;
-
 }
-
 #navbar {
   background-color: #1b1295;
-  /*   position: fixed; */
   top: 0;
   width: 100%;
-  /*  display: block; */
   transition: top 0.8s;
 }
-
 #navbar a {
   float: left;
   display: block;
@@ -185,7 +140,6 @@
   text-decoration: none;
   font-size: 21px;
 }
-
 .searchbar {
   margin-bottom: auto;
   /*   margin-top: auto; */
@@ -194,7 +148,6 @@
   border-radius: 30PX;
   padding: 10px;
 }
-
 .search_input {
   color: black;
   border: 0;
@@ -205,14 +158,12 @@
   line-height: 40px;
   transition: width 0.4s linear;
 }
-
 .searchbar:hover > .search_input {
   padding: 0 10px;
   width: 150px;
   caret-color: red;
   transition: width 0.4s linear;
 }
-
 .searchbar:hover > .search_icon {
   background: black;
   color: black;
@@ -235,11 +186,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   transition: transform 2s, filter 1.5s ease-in-out;
   transform-origin: center center;
   filter: brightness(50%);
-
   -webkit-box-shadow: -4px 27px 53px -15px rgba(0,0,0,0.75);
   -moz-box-shadow: -4px 27px 53px -15px rgba(0,0,0,0.75);
   box-shadow: -4px 27px 53px -15px rgba(0,0,0,0.75); 
@@ -248,7 +197,6 @@
   filter: brightness(100%);
   transform: scale(1);
 }
-
 .title-1{
   font-family: "Just Another Hand", cursive;
   font-size: 120px;
@@ -290,73 +238,13 @@
   -moz-box-shadow: -4px 27px 53px -15px rgba(0,0,0,0.75);
   box-shadow: -4px 27px 53px -15px rgba(0,0,0,0.75); 
 }
-
 .masthead1:hover {
   filter: brightness(100%);
   transform: scale(1);
 }
-
-
-
-/*Banner*/
-/* 
-header.masthead {
-  -webkit-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
-  margin-top: 4.3%;
-  text-align: center;
-  color: black;
-  background-image: url("../assets/header-vacas.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  opacity: 0.9;
-  width: 100%;
-  height: auto;
-  font-family: "Poppins", serif;
-}
-@supports (object-fit: cover) {
-  header.masthead {
-
-    object-fit: cover;
-    object-position: center center;
-  }
-}
- */
-
-
-/* header.masthead1 {
-  -webkit-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 21px 41px -3px rgba(0, 0, 0, 0.75);
-  margin-top: 4.3%;
-  text-align: center;
-  color: black;
-  background-image: url("../assets/header-vacas.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  opacity: 0.9;
-  width: 100%;
-  height: auto;
-
-  font-family: "Poppins", serif;
-}
-@supports (object-fit: cover) {
-  header.masthead1 {
-    object-fit: cover;
-    object-position: center center;
-  }
-}
- */
 .categ{
 margin-bottom: -5%;
 }
-
-
 .masthead2{
   width: 100%;
   height: 100vh;
@@ -366,78 +254,29 @@ margin-bottom: -5%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-
-  
 }
-
-/* Style the video: 100% width and height to cover the entire window */
-/*#myVideo {
-   display: -webkit-flex ;
-   display: flex;
-  right: 0;
-    bottom: 0;
-  
-   height: 25%;
-  
-  } */
-
-/* Add some content at the bottom of the video/page */
-/*.content {
-   /* position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-  }*/
-
-/* Style the button used to pause/play the video */
-/* #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }*/
-
-/*#myBtn:hover {
-    background: #ddd;
-    color: black;
-  }*/
-
 #background-video {
   width: 850px;
-  /* height: 100vh; */
   object-fit: cover;
-  /*  position: fixed; */
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: -1;
 }
-
 #mapa {
   width: 100%;
   height: 100%;
 }
-
 #tam-l {
   font-size: 80px;
 }
-
-
 .flip-box {
   background-color: transparent;
   width: 300px;
   height: 200px;
- /*  border: 1px solid #f1f1f1; */
   perspective: 1000px;
 }
-
 .flip-box-inner {
   position: relative;
   width: 100%;
@@ -446,11 +285,9 @@ margin-bottom: -5%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-
 .flip-box:hover .flip-box-inner {
   transform: rotateX(180deg);
 }
-
 .flip-box-front,
 .flip-box-back {
   position: absolute;
@@ -459,32 +296,11 @@ margin-bottom: -5%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
-/* .flip-box-front {
- background-color: #bbb; 
- color: black; 
-}
- */
 .flip-box-back {
- /*  background-color: dodgerblue; */
- /*  color: white; */
   transform: rotateX(180deg);
 }
 
 
-
-/* .dropdownList{
-  background-color: black;
-  color: yellow;
-  
-
-} */
-
-.dropdownList p{
- 
-  background-color: black;
-  
-}
 .dropdownList:hover a{
   background-color: #f1f1f1;
   text-decoration: none;
@@ -493,38 +309,27 @@ margin-bottom: -5%;
   text-align: left;
   font-size: 50px;
 }
-
-
-
+.dropdownList{
+  color: black;
+  background-color: black;
+}
 .hover-zoom--brightness img {
   transition: transform 2s, filter 1.5s ease-in-out;
   transform-origin: center center;
   filter: brightness(50%);
 }
-
 .hover-zoom--brightness:hover img {
   filter: brightness(100%);
   transform: scale(1);
 }
-
-
-
-
-
 .portfolio-item {
   display: block;
-/*   position: relative; */
   overflow: hidden;
   max-width: 530px;
   margin: auto auto 1rem;
-  
   -webkit-box-shadow: 2px 7px 34px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 7px 34px -8px rgba(0,0,0,0.75);
   box-shadow: 2px 7px 34px -8px rgba(0,0,0,0.75);
-
-/*   border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px; */
-
 }
 .portfolio-item .caption {
   display: flex;
@@ -583,8 +388,6 @@ margin-bottom: -5%;
             clip-path: inset(2rem);
   }
 }
-
-
 .parallax {
   margin-top: 5%;
   background-attachment: fixed;
@@ -594,7 +397,6 @@ margin-bottom: -5%;
   height: 1080px;
   position: relative;
 }
-
 .parallax-caption {
   position: absolute;
   bottom: 20px;
@@ -602,68 +404,52 @@ margin-bottom: -5%;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 .parallax-caption h3 {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .parallax-caption p {
   font-size: 1.2rem;
 }
-
 .parallax-1 {
   background-image: url('../assets/new-cheese/provolone/provoleta-rodajas-2.jpg');
   -webkit-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
   box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
 }
-
 .parallax-2 {
   background-image: url('../assets/new-cheese/edam/edam-01.jpg');
   -webkit-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
   box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
 }
-
 .parallax-3 {
   background-image: url('../assets/new-cheese/chester/chester-chihuahua.jpg');
   -webkit-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
   box-shadow: -1px 3px 51px -12px rgba(0,0,0,0.75);
 }
-
 .login {
   min-height: 100vh;
 }
-
 .bg-image {
   background-image: url('../assets/new-cheese/chapata/chapata-SF.png');
   background-size: cover;
   background-position: center;
-/*   float: left; */
-  /* clip-path: circle(40%);
-  shape-outside: circle(45%); */
   position: relative;
 }
-/*  */
 .login-heading {
   font-weight: 300;
 }
-
 .btn-login {
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
   padding: 0.75rem 1rem;
 }
-
 .text-delius{
   font-family: "Delius", cursive;
   font-size: 15;
   color: white;
-/*   text-align: center; */
- /*  margin-top: -10%; */
- /*  text-shadow: 2px 2px #000000; */
 }
 .princess-sofia-regular {
   font-family: "Princess Sofia", cursive;
