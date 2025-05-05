@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Funcion que carga las categorias
     TraerCategorias();
+    TaerDatosDependiendoLaRutaDelDOM();
 
     const sidebarWrapper = document.getElementById('sidebar-wrapper');
     const menuToggle = document.body.querySelector('.menu-toggle');
@@ -135,4 +136,59 @@ function fadeIn(el, display) {
 function TraerCategorias(){
     console.log("Categorias creadas");
     trriggers.CategoriasSearch("index","Categorias");
+}
+
+// FUNCION PARA COLOCAR LOS DATOS SEGUN LA RUTA EN LA QUE SE ENCUENTRE EL USUARIO
+function TaerDatosDependiendoLaRutaDelDOM(){
+    const ruta = window.location.pathname; // Ruta Completa
+    const partesRuta = ruta.split('/'); // Separar por /
+    const ultimaCarpeta = partesRuta.length >= 2 ? partesRuta[partesRuta.length - 2] : null; // Traer la penultima seccion en este caso la ruta de la carpeta
+    //console.log("Estás en:", ultimaCarpeta);
+
+    // Variables con las que se pasara la informacion a el modelo
+    let carpeta = null;
+
+    // Dependiendo de la ruta es lo que se va a mostar
+    switch(ultimaCarpeta){
+        case "quesosblancos":
+            carpeta = ["quesosblancos","Contenedor-Productos-Quesos-Blancos", "2"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "quesosamarillos":
+            carpeta = ["quesosamarillos","Contenedor-Productos-Quesos-Amarillos","3"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "quesoslineagourmet":
+            carpeta = ["quesoslineagourmet","","4"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "crema":
+            carpeta = ["crema","Contenedor-Productos-Crema","5"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "postres":
+            carpeta = ["postres","Contenedor-Productos-Postres","6"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "ricottines":
+            carpeta = ["ricottines","","7"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "congelados":
+            carpeta = ["congelados","Contenedor-Productos-Congelados","8"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "complementos":
+            carpeta = ["complementos","Contenedor-Productos-Complementos","9"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "canastas":
+            carpeta = ["canastas","Contenedor-Productos-Canastas","10"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        default:
+            const params = new URLSearchParams(window.location.search);
+            trriggers.MostrarDatosPorProductoIndividual(params.get('Id'))
+            break
+    }
 }
