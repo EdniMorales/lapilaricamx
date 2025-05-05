@@ -473,12 +473,28 @@ margin-bottom: -5%;
 
 
 
-.dropdownList{
+/* .dropdownList{
   background-color: black;
-/*   margin-right: 150px;
-  margin-left: 150px;
-  margin-top: 50px; */
+  color: yellow;
+  
+
+} */
+
+.dropdownList p{
+ 
+  background-color: black;
+  
 }
+.dropdownList:hover a{
+  background-color: #f1f1f1;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-align: left;
+  font-size: 50px;
+}
+
+
 
 .hover-zoom--brightness img {
   transition: transform 2s, filter 1.5s ease-in-out;

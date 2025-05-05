@@ -35,7 +35,6 @@
    <!--  <link href="css/hover-zoom.css" rel="stylesheet" /> -->
     <link href="<?= base_url ?>css/animate.css" rel="stylesheet" />
    <!--  <link href="css/base.css" rel="stylesheet" /> -->
-
        <!-- Bootstrap core JS-->
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
@@ -52,7 +51,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
     <script src="<?= base_url ?>js/wow.min.js"></script>
     <script>
       new WOW().init();
@@ -64,32 +62,14 @@
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
       <!-- Navigation-->
-      <nav
-        class="navbar navbar-expand-lg fixed-top"
-        
-        id="navbar"
-      >
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <!-- sticky-top -->
         <div class="container px-5">
           <a class="navbar-brand" href="<?= base_url ?>Principal/index">
-            <img
-              src="<?= base_url ?>assets/logo-resplandor-bco.png"
-              alt="Logo"
-              width="150"
-              height="100"
-              class="d-inline-block align-text-top"
-            />
+            <img src="<?= base_url ?>assets/logo-resplandor-bco.png" alt="Logo" width="150" height="100" class="d-inline-block align-text-top"/>
           </a>
           <!--  <a class="navbar-brand" href="index.html">Lacteos La Pilarica</a> -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -115,83 +95,21 @@
               </li>
               <!--<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>-->
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  id="navbarDropdownBlog"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Contactanos</a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactanos</a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                  <li>
-                    <a class="dropdown-item" href="about.html"
-                      >Bolsa de Trabajo</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="about.html">Bolsa de Trabajo</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?= base_url ?>Solo/index"
-                  >Solo el Amor Supera la Leche</a
-                >
+                <a class="nav-link" href="<?= base_url ?>Solo/index">Solo el Amor Supera la Leche</a>
               </li>
-
-              </ul>
-          
+              </ul>        
               <div class="searchbar">
-                <input
-                  class="search_input"
-                  id="buscador-prod-index"
-                  type="text"
-                  name=""
-                  placeholder="Buscar"
-                />
+                <input class="search_input" id="buscador-prod-index" type="text" name="" placeholder="Buscar"/>
                 <a href="#" class="search_icon" id="button-buscador-prod-index">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
+                  <!-- <i class="fa fa-search" aria-hidden="true"> --></i></a>
                 <div id="dropdown-index"></div>
               </div> 
-        <!--      <div class="searchbar">
-                <input
-                  class="search_input"
-                  id="buscador-prod-index"
-                  type="text"
-                  name=""
-                  placeholder="Buscar ..."
-                />
-                <a href="#" class="search_icon" id="button-buscador-prod-index">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
-                <div id="dropdown-index"></div>
-              </div> 
- -->
-              <!--     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> -->
-              <!--   <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-                                </ul>
-                            </li> -->
-              <!--      <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
-                                </ul>
-                            </li> -->
-         
-     <!--        
-          <div class="input-group rounded">
-  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-  <span class="input-group-text border-0" id="search-addon">
-    <i class="fas fa-search"></i>
-  </span>
-</div> -->
-</div>
-
-
+          </div>
         </div>
       </nav>

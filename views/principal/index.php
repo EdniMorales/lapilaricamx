@@ -383,34 +383,6 @@
         </div>
       </section>
 
-                      <!-- Botón que activa el modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">
-  Abrir Modal
-</button>
-
-<!-- Estructura del Modal -->
-<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- Encabezado del Modal -->
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Título del Modal</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <!-- Cuerpo del Modal -->
-      <div class="modal-body">
-        <p>Contenido del modal va aquí...</p>
-      </div>
-      <!-- Pie del Modal -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar cambios</button>
-      </div>
-    </div>
-  </div>
-</div>
-
- 
   <!--     <h1>3D Flip Box (Vertical)</h1>
 <h3>Hover over the box below:</h3>
 
