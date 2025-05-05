@@ -32,16 +32,54 @@ function getAllCategorias($conn) {
     return $data;
 }
 
+// Función para obtener un producto específico por ID
+function searchIdAllProductosByCategories($conn, $id_categorie) {
+    $sql = <<<EOD
+        SELECT
+            PRODUCTOS.ID_PRODUCTOS,
+            PRODUCTOS.NOMBRE AS PRODUCTO,
+            PRODUCTOS.PRESENTACION,
+            PRODUCTOS.MARCA,
+            PRODUCTOS.IMAGEN_ETIQUETA,
+            PRODUCTOS.IMAGEN_PRODUCTO,
+            CATEGORIAS.NOMBRE AS CATEGORIA,
+            CATEGORIAS.DESCRIPCION AS DESCRIPCION_CATEGORIA
+        FROM
+            PRODUCTOS
+        INNER JOIN
+            TABLA_ALIMENTICIA
+        ON PRODUCTOS.ID_PRODUCTOS = TABLA_ALIMENTICIA.ID_PRODUCTO
+
+        INNER JOIN
+            CATEGORIAS
+        ON TABLA_ALIMENTICIA.ID_CATEGORIA = CATEGORIAS.ID_CATEGORIA
+
+        WHERE CATEGORIAS.ID_CATEGORIA = ?
+
+        ORDER BY PRODUCTOS.NOMBRE;
+    EOD;
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $id_categorie);  // "i" significa un parámetro entero
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    $data = array();
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $data[] = $row;
+        }
+    }
+    
+    return $data;
+}
 
 // Función para obtener un producto específico por ID
 function searchIdAllProductos($conn, $id_producto) {
     $sql = <<<EOD
         SELECT
             PRODUCTOS.NOMBRE AS PRODUCTO,
-            PRODUCTOS.CLAVE,
             PRODUCTOS.PRESENTACION,
             PRODUCTOS.MARCA,
-            PRODUCTOS.HISTORIA,
             PRODUCTOS.IMAGEN_ETIQUETA,
             PRODUCTOS.IMAGEN_PRODUCTO,
             PRODUCTOS.RESETAS,
@@ -137,6 +175,8 @@ if (isset($_GET['action'])) {
     } elseif ($action == 'searchIdAllProductos' && isset($_GET['search_prod'])) {
         $search_prod = mysqli_real_escape_string($conn, $_GET['search_prod']);
         $data = searchIdAllProductos($conn, $search_prod);
+    } elseif ($action == 'searchIdAllProductosByCategories' && isset($_GET['search_categories'])){
+        $data = searchIdAllProductosByCategories($conn, $_GET['search_categories']);
     } elseif ($action == 'searchOnlyProductos' && isset($_GET['search_prod'])) {
         $search_term = mysqli_real_escape_string($conn, $_GET['search_prod']);
         $data = searchOnlyProductos($conn, $search_term);

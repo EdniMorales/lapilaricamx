@@ -36,5 +36,35 @@ export function CategoriasSearch(page, dropdown){
         .catch(error => {
             console.error("Error al buscar productos:", error);
         });
-
 }
+
+export function ProductosPorCategoriaSearch(parametros){
+    console.log(parametros);
+    // Declarar cada uno de los parametros para su utilizacion
+    let Carpeta = parametros[0];
+    let contenedor = parametros[1];
+    let IdCategoria = parametros[2];
+    let widget = document.getElementById(contenedor);
+
+    // Validar que no este vacio
+    if (Carpeta.length > 0){
+        //Ajax hacia el servidor
+        fetch(`../php/backend.php?action=searchIdAllProductosByCategories&search_categories=${encodeURIComponent(IdCategoria)}`)
+            .then(response => response.json()) // Espera la respuesta como JSON
+            .then(data => {
+                console.log("Datos obtenidos: ", data);
+                widgets.ColocarLosProductosEnLasTarjetas(contenedor, data);
+            })
+            .catch(error => {
+                console.error("Error al buscar productos:", error);
+            });
+    }else{
+        widget.innerHTML = ''
+    }
+}
+
+export function MostrarDatosPorProductoIndividual(Id_Producto){
+    console.log(Id_Producto)
+}
+
+
