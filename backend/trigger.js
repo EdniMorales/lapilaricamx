@@ -9,10 +9,10 @@ export function ProductSearch(Id_Producto, page, dropdown){
     // Validar que no este vacio
     if (Search_Text.length > 0){
         // Ajax asi es servidor
-        fetch(`../php/backend.php?action=searchOnlyProductos&search_prod=${encodeURIComponent(Search_Text)}`)
+        fetch(`../php/backend.php?action=searchOnlyProductos&search_prod=${encodeURIComponent(Search_Text)}`) //<= Se coloca ../ para produccion
             .then(response => response.json()) // Espera la respuesta como JSON
             .then(data => {
-                console.log("Datos obtenidos: ", data); 
+            //    console.log("Datos obtenidos: ", data);
                 widgets.dropdownprod(dropdown , data);
             })
             .catch(error => {
@@ -22,3 +22,19 @@ export function ProductSearch(Id_Producto, page, dropdown){
         widget.innerHTML = ''
     }
 };
+
+export function CategoriasSearch(page, dropdown){
+    const widget = document.getElementById(dropdown);
+    console.log("Se a clickeado");
+    //Ajax hacia el servidor
+    fetch(`../php/backend.php?action=getAllCategorias`)
+        .then(response => response.json()) // Espera la respuesta como JSON
+        .then(data => {
+            //console.log("Datos obtenidos: ", data);
+            widgets.DropCategorias(dropdown , data);
+        })
+        .catch(error => {
+            console.error("Error al buscar productos:", error);
+        });
+
+}

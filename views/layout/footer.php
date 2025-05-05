@@ -247,11 +247,16 @@
         trriggers.ProductSearch(buttonString,pageString,widgetString);
       }); // Barra de navegación
       document.getElementById("button-buscador-prod-index").addEventListener("click", function() {
-        const buttonString = "buscador-prod-index";  // El string que quieres pasar
+        const buttonString = "buscador-prod-index";  // El item con informacion
         const pageString = "index";
         const widgetString = "dropdown-index";
         trriggers.ProductSearch(buttonString,pageString,widgetString); // Pasa el string a la función
       });// Botón de búsqueda
+      //document.getElementById("navbarSupportedContent").addEventListener("click", function(){
+      //  const pageString = "index";
+      //  const widgetString = "Categorias";// El dropdown con las categorias
+      //  trriggers.CategoriasSearch(pageString, widgetString)
+      //});// Boton de las categorias
     </script>
 
 
