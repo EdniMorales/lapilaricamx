@@ -11,6 +11,7 @@ class Database{
         $dbname = "";
         $port =3306;
         
+        
         // Crear la conexión
         $conexion = new mysqli($servername, $username, $password, $dbname, $port);
         // Establecer la codificación de caracteres de la conexión a UTF-8
