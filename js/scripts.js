@@ -159,7 +159,7 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case "quesoslineagourmet":
-            carpeta = ["quesoslineagourmet","","4"];
+            carpeta = ["quesoslineagourmet","Contenedor-Productos-Quesos-Linea-Gourmet","4"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case "crema":
@@ -171,7 +171,7 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case "ricottines":
-            carpeta = ["ricottines","","7"];
+            carpeta = ["ricottines","Contenedor-Productos-Ricottines","7"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         case "congelados":
@@ -184,6 +184,10 @@ function TaerDatosDependiendoLaRutaDelDOM(){
             break
         case "canastas":
             carpeta = ["canastas","Contenedor-Productos-Canastas","10"];
+            trriggers.ProductosPorCategoriaSearch(carpeta);
+            break
+        case "yogurth":
+            carpeta = ["yogurth", "Contenedor-Productos-Yogurth", "11"];
             trriggers.ProductosPorCategoriaSearch(carpeta);
             break
         default:
