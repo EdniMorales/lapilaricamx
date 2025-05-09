@@ -142,7 +142,9 @@
       </div>
   </div>
 </section>
-<!-- 
+
+
+
 <div class="container-fluid ps-md-0">
   <div class="row g-0">
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
@@ -180,8 +182,12 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 <section>
+
+
+
+
 <div>
   <div class="parallax parallax-1">
     <div class="parallax-caption">
