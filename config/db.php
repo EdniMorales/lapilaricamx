@@ -5,11 +5,11 @@
 class Database{
     public static function connect(){
         // Credenciales de la base de datos
-        $servername ="";
-        $username ="";
-        $password ="";
-        $dbname = "";
-        $port =3306;
+    $servername ="107.161.179.69";
+$username ="fvyvvdbc_fvyvvdbc";
+$password ="LaPilarica24#";
+$dbname = "fvyvvdbc_pilaweb";
+$port =3306;
         
         
         // Crear la conexión

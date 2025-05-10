@@ -27,11 +27,8 @@
       <!-- Section: Links  -->
       <section class="">
         <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
           <div class="row mt-3">
-            <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
               <h6 class="text-uppercase fw-bold mb-4">
                 <i class="fas fa-gem me-3"></i>Lacteos La Pilarica
               </h6>
@@ -41,7 +38,6 @@
                 elaborados con el mismo amor de siempre.
               </p>
             </div>
-            <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
@@ -61,8 +57,6 @@
                 <a href="#!" class="text-reset">Mantequilla</a>
               </p>
             </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Postres</h6>
@@ -93,7 +87,7 @@
                 soporte@pilarica.mx
               </p>
               <p><i class="fas fa-phone me-3"></i>(55) 5972 0102</p>
-              <p><i class="fab fa-whatsapp me-3"></i> (55) 5555 5555</p>
+              <p><i class="fab fa-whatsapp me-3"></i>(56) 4543 8166</p>
             </div>
             <!-- Grid column -->
           </div>
@@ -103,67 +97,19 @@
       <!-- Section: Links  -->
       <!-- Call to action-->
       <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-        <div
-          class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start"
-        >
+        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
           <div class="mb-4 mb-xl-0 container">
-            <div class="fs-3 fw-bold text-white">
-              ¡Suscribete a nuestras noticias!
-            </div>
-            <div class="text-white-50 text-center">
-              Registra tu correo electronico
+            <div class=" text-white">
+              ¡ Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más...!
             </div>
           </div>
           <div class="ms-xl-4">
-            <!--        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
-          </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress2" class="form-label">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-          </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Check me out
-              </label>
-            </div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </div>
-        </form> -->
+  
             <div class="input-group">
               <input
                 class="form-control"
                 type="text"
-                placeholder="Correo Electronico ..."
+                placeholder="Ingresa tu correo electronico"
                 aria-label="Correo Electronico..."
                 aria-describedby="button-newsletter"
               />

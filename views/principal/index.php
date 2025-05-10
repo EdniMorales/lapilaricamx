@@ -145,44 +145,12 @@
 
 
 
-<div class="container-fluid ps-md-0">
-  <div class="row g-0">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-    <div class="col-md-8 col-lg-6">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                  <label for="floatingPassword">Password</label>
-                </div>
-                <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                  <label class="form-check-label" for="rememberPasswordCheck">
-                    Remember password
-                  </label>
-                </div>
-                <div class="d-grid">
-                  <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Sign in</button>
-                  <div class="text-center">
-                    <a class="small" href="#">Forgot password?</a>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+
+
+
+
 <section>
 
 
@@ -778,6 +746,76 @@
           </div>
         </div>
       </section>
+
+<div class="container-fluid ps-md-0">
+  <div class="row g-0">
+    <div class=" col-md-4 col-lg-6 bg-image"></div><!-- d-none d-md-flex -->
+
+    
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Quejas y Sugerencias</h3>
+              <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+
+
+
+
+
       <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CIoJNcqQMw4FTF3TvxjQXvAchNVFOQ4&ehbc=2E312F&noprof=1" width="100%" height="600"   style="border: 0"
       allowfullscreen=""
       loading="lazy"
