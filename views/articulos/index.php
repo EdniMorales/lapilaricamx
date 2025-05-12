@@ -31,10 +31,84 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Card One</h2>
+                            <h5 class="card-title text-center">Tabla Nutrimental</h5>
+
+                            <div class="row">
+    <div class="col-md-12">
+        <p class="text-center">Información nutrimental por cada 100 g.</p>
+
+                           <table class="table">
+                          <!--       <thead>
+                                    <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">
+                                        Información Nutrimental
+                                        Por cada 100 g.</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                    </tr>
+                                </thead> -->
+                                <tbody>
+                                    <tr>
+                                    <!-- <th scope="row"></th> -->
+                                    <td>Contenido Energertico</td>
+                                    <td></td>
+                                    <td id="CONTENIDO_ENERGETICO">274,68 Kcal</td>
+                                    </tr>
+                                    <tr>
+                                   <!--  <th scope="row"></th> -->
+                                    <td>PROTEINAS</td>
+                                    <td></td>
+                                    <td id="PROTEINA">21,5 g</td>
+                                    </tr>
+                                    <tr>
+                                   <!--  <th scope="row"></th> -->
+                                    <td colspan="2">GRASAS TOTALES</td>
+                                    <td id="GRASAS_TOTALES">20 g</td>  
+                                    </tr>
+                                    <tr>
+                                    <!-- <th scope="row"></th> -->
+                                    <td><strong>Grasa Saturada</strong></td>
+                                    <td></td>
+                                    <td id="GRASAS_SATURADAS"></td>
+                                    </tr>
+                                    <tr>
+                                    <!-- <th scope="row"></th> -->
+                                    <td>Grasa Trans</td>
+                                    <td></td>
+                                    <td id="GRASAS_TRANS"></td>
+                                    </tr>
+                                    <tr>
+                                    <!-- <th scope="row"></th> -->
+                                    <td>Carbohidratos</td>
+                                    <td></td>
+                                    <td id="CARBOHIDRATOS"></td>
+                                    </tr>
+                                    <tr>
+                                    <!-- <th scope="row"></th> -->
+                                    <td><strong>Azucares Totales</strong></td>
+                                    <td></td>
+                                    <td id="AZUCARES_TOTALES"></td>
+                                    </tr> 
+                                    <tr>
+                                    <!-- <th scope="row"></th> -->
+                                    <td>Fibra Dietética</td>
+                                    <td></td>
+                                    <td id="FIBRA_DIETETICA"></td>
+                                    </tr>
+                                      <tr>
+                                    <!-- <th scope="row"></th> -->
+                                    <td>Sodio</td>
+                                    <td></td>
+                                    <td id="SODIO"></td>
+                                    </tr>
+                                </tbody>
+                                </table>
+
+                                </div></div>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                        <div class="card-footer"><p>Tabla actualizada 12/05/2025</p></div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
@@ -42,6 +116,10 @@
                         <div class="card-body">
                             <h2 class="card-title">Card Two</h2>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        
                         </div>
                         <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
                     </div>
