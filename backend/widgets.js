@@ -211,6 +211,7 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
         azucaresTotales.innerText = product.AZUCARES_TOTALES;
         fibraDietetica.innerText = product.FIBRA_DIETETICA;
         sodio.innerText = product.SODIO;
+        ingredientes.innerText = product.INGREDIENTES
 
         //Progres bars
         humedad.innerHTML = `<strong>Humedad: ${product.HUMEDAD}</strong>`;
