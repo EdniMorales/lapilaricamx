@@ -74,10 +74,10 @@ export function MostrarDatosPorProductoIndividual(Id_Producto){
             .catch(error => {
                 console.error("Error al buscar productos:", error);
             });
-    }else{
+    }/*else{
         alert("No pudimos encontrar el producto que estas buscando");
         window.location.href = `../principal/index`;
-    }
+    }*/
 }
 
 

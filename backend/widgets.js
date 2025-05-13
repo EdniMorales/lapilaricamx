@@ -15,7 +15,7 @@ export function dropdownprod (widget,array) {
     array.forEach(product => {
         const drop = document.createElement('div');
         drop.classList.add('dropdownList');
-        drop.innerHTML= `<h3><a href="../articulos/index?id=${product.ID_PRODUCTOS}" target="_blank">${product.NOMBRE}</a></h3>`;
+        drop.innerHTML= `<h3><a href="../articulos/index?Id=${product.ID_PRODUCTOS}">${product.NOMBRE}</a></h3>`;
 
     ddrop.appendChild(drop);
 });
@@ -151,7 +151,7 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
     // Declarar los elementos del DOM para modificarlos
     // Datos del producto
     const imagenEtiqueta = document.getElementById("ImagenEtiqueta_Producto");
-    const imagenProducto = document.getElementById("ImagenProducto_Producto");
+    //const imagenProducto = document.getElementById("ImagenProducto_Producto");
     const nombreProducto = document.getElementById("NombreDeProducto_Producto");
     const descripcion = document.getElementById("Descripcion_Producto");
     const ingredientes = document.getElementById("Ingredientes_Producto");
@@ -260,7 +260,7 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
             imagenBannerDB = imagenBannerDB;
         }
 
-        imagenProducto.src = imagenProductoDB;
+        //imagenProducto.src = imagenProductoDB;
         imagenEtiqueta.src = imagenEtiquetaDB;
 });
 }
