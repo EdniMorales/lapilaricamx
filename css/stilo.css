@@ -504,3 +504,10 @@ margin-bottom: -5%;
   font-weight: 700;
   font-style: normal; 
 } 
+.txt-progress-bar{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  margin-top: 5%;
+}

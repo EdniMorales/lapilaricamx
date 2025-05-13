@@ -9,8 +9,6 @@
             </div>
         </header> 
         <!-- Section-->
-
-
  <!-- Page Content-->
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
@@ -18,7 +16,7 @@
                 <div class="col-lg-7 text-center"><img class="img-fluid rounded mb-4 mb-lg-0" src="../assets/Fresa-Yogurth-01.png" alt="..." id="logo-ini"/></div>
                 <div class="col-lg-5">
                     <h1 class="font-weight-light" id="Nombre del producto"></h1>
-                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+                    <p id="DESCRIPCION">This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
                     <a class="btn btn-primary" href="#!">Call to Action!</a>
                 </div>
             </div>
@@ -32,22 +30,10 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title text-center">Tabla Nutrimental</h5>
-
                             <div class="row">
-    <div class="col-md-12">
-        <p class="text-center">Información nutrimental por cada 100 g.</p>
-
+                             <div class="col-md-12">
+                             <p class="text-center">Información nutrimental por cada 100 g.</p>
                            <table class="table">
-                          <!--       <thead>
-                                    <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">
-                                        Información Nutrimental
-                                        Por cada 100 g.</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                    </tr>
-                                </thead> -->
                                 <tbody>
                                     <tr>
                                     <!-- <th scope="row"></th> -->
@@ -104,33 +90,42 @@
                                     </tr>
                                 </tbody>
                                 </table>
-
                                 </div></div>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
                         </div>
-                        <div class="card-footer"><p>Tabla actualizada 12/05/2025</p></div>
+                        <div class="card-footer"></div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Card Two</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        
+                            <h2 class="card-title ">Ingredientes</h2>    
+                            <p class="" id="INGREDIENTES">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, 
+                                nostrum doloremque accusantium possimus quam consequatur consequuntur voluptatem laborum hic dolores delectus placeat autem id amet enim libero earum quia quo?</p>
+                            <p class="txt-progress-bar"><strong>Humedad.:</strong></p>
+                            <div class="progress">    
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 55%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>                     
+                            <p class="txt-progress-bar"><strong>Grasa Butírica min.:</strong></p>
+                            <div class="progress">                      
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 17%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>    
+                            <p class="txt-progress-bar"><strong>Proteína min.:</strong></p>
+                            <div class="progress">                      
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 19%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div> 
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                        <div class="card-footer"></div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Card Three</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            <h2 class="card-title">Historia.:</h2>
+                            <p class="card-text" id="HISTORIA">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, 
+                                maxime minus quam molestias corporis quod, ea minima accusamus.</p>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                        <div class="card-footer"></div>
                     </div>
                 </div>
             </div>
