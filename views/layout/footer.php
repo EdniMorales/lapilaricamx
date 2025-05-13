@@ -42,35 +42,38 @@
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Productos</h6>
               <p>
-                <a href="#!" class="text-reset">Quesos Blancos</a>
+                <a href="../quesosblancos/index" class="text-reset">Quesos Blancos</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Quesos Amarillos</a>
+                <a href="../quesosamarillos/index" class="text-reset">Quesos Amarillos</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Quesos Gourmet</a>
+                <a href="../quesoslineagourmet/index" class="text-reset">Quesos Linea Gourmet</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Cremas</a>
+                <a href="../crema/index" class="text-reset">Cremas</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Mantequilla</a>
+                <a href="../canastas/index" class="text-reset">Regala una canasta</a>
               </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Postres</h6>
+              <h6 class="text-uppercase fw-bold mb-4">Disfruta con</h6>
               <p>
-                <a href="#!" class="text-reset">Fresas con Crema</a>
+                <a href="../postres/index" class="text-reset">Postres</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Duraznos con Crema</a>
+                <a href="../ricottines/index" class="text-reset">Ricottines</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Ricottin</a>
+                <a href="../yogurth/index" class="text-reset">Yogures</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Regala una canasta</a>
+                <a href="../congelados/index" class="text-reset">Congelados</a>
+              </p>
+              <p>
+                <a href="../complementos/index" class="text-reset">Complementos</a>
               </p>
             </div>
             <!-- Grid column -->

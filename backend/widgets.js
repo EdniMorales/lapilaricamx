@@ -146,3 +146,121 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
     ddrop.appendChild(drop);
 });
 }
+
+export function ColocarLosDatosDelProductoEnLaPagina(array) {
+    // Declarar los elementos del DOM para modificarlos
+    // Datos del producto
+    const imagenEtiqueta = document.getElementById("ImagenEtiqueta_Producto");
+    const imagenProducto = document.getElementById("ImagenProducto_Producto");
+    const nombreProducto = document.getElementById("NombreDeProducto_Producto");
+    const descripcion = document.getElementById("Descripcion_Producto");
+    const ingredientes = document.getElementById("Ingredientes_Producto");
+    const historia = document.getElementById("Historia_Producto");
+
+    //Tabla nutrimental
+    const porcion = document.getElementById("Porcion_Producto");
+    const contenidoEnergetico = document.getElementById("ContenidoEnergetico_Producto");
+    const proteina = document.getElementById("Proteina_Producto");
+    const grasasTotales = document.getElementById("GrasasTotales_Producto");
+    const grasasSaturadas = document.getElementById("GrasasSaturadas_Producto");
+    const grasasTrans = document.getElementById("GrasasTrans_Producto");
+    const carbohidratos = document.getElementById("Carbohidratos_Producto");
+    const azucaresAnadidos = document.getElementById("AzucaresAnadidos_Producto");
+    const azucaresTotales = document.getElementById("AzucaresTotales_producto");
+    const fibraDietetica = document.getElementById("FibraDietetica_Producto");
+    const sodio = document.getElementById("Sodio_Producto");
+
+    //Progress bars
+    const humedad = document.getElementById("Humedad_Producto");
+    const humedadProgress = document.getElementById("HumedadProgress_Producto")
+    const grasaButiricaMin = document.getElementById("GrasaButiricaMin_Producto");
+    const grasaButiricaMinProgress = document.getElementById("GrasaButiricaMinProgress_Producto");
+    const proteinaMin = document.getElementById("ProteinaMin_Producto");
+    const proteinaMinProgress = document.getElementById("ProteinaMinProgress_Producto");
+
+    //Botones
+    const BotonConoseMas = document.getElementById("BotonConoceMas_Producto");
+
+
+    if(array.error){ // Por si falla la consulta
+        console.log(array.error)
+        return
+    }
+    if(array.length === 0){ // si la consulta esta vacia
+        return
+    }
+
+    array.forEach(product => { // la funcion para colocar los datos de la consulta
+        let nombreLimpio = product.CATEGORIA.replace(/\s+/g, '').toLowerCase();
+        let nombreCapitalizado = product.CATEGORIA.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+        
+        //Encabezado
+        nombreProducto.innerText = product.PRODUCTO;
+        descripcion.innerText = product.DESCRIPCION;
+        BotonConoseMas.href = `../${nombreLimpio}/index`;
+
+        //Tabla
+        porcion.innerText = `Información nutrimental por cada ${product.PORCION} g.`;
+        contenidoEnergetico.innerText = product.CONTENIDO_ENERGETICO;
+        proteina.innerText = product.PROTEINA;
+        grasasTotales.innerText = product.GRASAS_TOTALES;
+        grasasSaturadas.innerText = product.GRASAS_SATURADAS;
+        grasasTrans.innerText = product.GRASAS_TRANS;
+        carbohidratos.innerText = product.CARBOHIDRATOS;
+        azucaresAnadidos.innerText = product.AZUCARES_AÑADIDOS;
+        azucaresTotales.innerText = product.AZUCARES_TOTALES;
+        fibraDietetica.innerText = product.FIBRA_DIETETICA;
+        sodio.innerText = product.SODIO;
+
+        //Progres bars
+        humedad.innerHTML = `<strong>Humedad: ${product.HUMEDAD}</strong>`;
+        let humedadPorcentaje = parseFloat(product.HUMEDAD);
+        humedadProgress.style = `width: ${humedadPorcentaje}%`;
+
+        grasaButiricaMin.innerHTML = `<strong>Grasa Butírica min: ${product.GRASA_BUTIRICA_MIN}</strong>`;
+        let grasaButiricaMinPorsentaje = parseFloat(product.GRASA_BUTIRICA_MIN);
+        grasaButiricaMinProgress.style = `width: ${grasaButiricaMinPorsentaje}%`;
+
+        proteinaMin.innerHTML = `<strong>Proteína min: ${product.PROTEINA_MIN}</strong>`;
+        let proteinaMinPorsentaje = parseFloat(product.PROTEINA_MIN);
+        proteinaMinProgress.style = `width: ${proteinaMinPorsentaje}%`;
+
+        //Historia
+        historia.innerText = product.HISTORIA;
+
+        //Imagenes
+
+        // Verificar si IMAGEN_PRODUCTO tiene un valor Base64 o es null
+        let imagenProductoDB = product.IMAGEN_PRODUCTO;
+        if (!imagenProductoDB) {
+            // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
+            imagenProductoDB = '../assets/new-cheese/default.png';
+        } else {
+            // Asegurarse de que la imagen esté en formato Base64 adecuado
+            imagenProductoDB = 'data:image/png;base64,' + imagenProductoDB;
+        }
+
+        // Verificar si IMAGEN_ETIQWUETA tiene un valor Base64 o es null
+        let imagenEtiquetaDB = product.IMAGEN_ETIQUETA;
+        if (!imagenEtiquetaDB) {
+            // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
+            imagenEtiquetaDB = '../assets/new-cheese/default.png';
+        } else {
+            // Asegurarse de que la imagen esté en formato Base64 adecuado
+            imagenEtiquetaDB = 'data:image/png;base64,' + imagenEtiquetaDB;
+        }
+
+        // Verificar si IMG_BANNER tiene una ruta o es null
+        let imagenBannerDB = product.IMG_BANNER;
+        if (!imagenBannerDB) {
+            // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
+            imagenBannerDB = '../assets/new-cheese/default.png';
+        } else {
+            // Asegurarse de que la imagen esté en formato Base64 adecuado
+            imagenBannerDB = imagenBannerDB;
+        }
+
+        imagenProducto.src = imagenProductoDB;
+        imagenEtiqueta.src = imagenEtiquetaDB;
+});
+}
