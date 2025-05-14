@@ -162,7 +162,7 @@
         if (prevScrollpos > currentScrollPos) {
           document.getElementById("navbar").style.top = "0";
         } else {
-          document.getElementById("navbar").style.top = "-125px";
+          document.getElementById("navbar").style.top = "-130px";
         }
         prevScrollpos = currentScrollPos;
       };
