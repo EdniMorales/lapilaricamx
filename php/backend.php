@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 
 // Función para obtener todas las Categorías
 function getAllCategorias($conn) {
-    $sql = "SELECT * FROM CATEGORIAS";
+    $sql = "SELECT * FROM CATEGORIAS WHERE NOMBRE != ' '";
     $result = $conn->query($sql);
 
     if (!$result) {
