@@ -472,6 +472,9 @@ margin-bottom: -5%;
   background-image: url('../assets/new-cheese/chapata/chapata-SF.png');
   background-size: cover;
   background-position: center;
+/*     border: 5px solid darkblue; */
+/*  background-size: 25px 50px; */
+  background-size: 100% 100%;
 /*   position: fixed;
   z-index: -1; */
 }
