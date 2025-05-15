@@ -758,50 +758,59 @@
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">Quejas y Sugerencias</h3>
-              <form class="row g-3">
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Password</label>
-    <input type="password" class="form-control" id="inputPassword4">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress2" class="form-label">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">City</label>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">State</label>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>...</option>
-    </select>
-  </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="inputZip">
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
+  <form class="row g-3" id="FormularioQS" enctype="multipart/form-data">
+    <div class="col-md-6">
+      <label for="NombreFormQS" class="form-label">Nombre</label>
+      <input type="text" class="form-control" name="NombreFormQS" id="NombreFormQS" placeholder="Coloca tu nombre" required>
+    </div>
+    <div class="col-md-6">
+      <label for="ApellidoFormQS" class="form-label">Apellido</label>
+      <input type="text" class="form-control" name="ApellidoFormQS" id="ApellidoFormQS" placeholder="Coloca tu apellido" required>
+    </div>
+    <div class="col-md-12">
+      <label for="EmailFormQS" class="form-label">Email</label>
+      <input type="email" class="form-control" name="EmailFormQS" id="EmailFormQS" placeholder="Coloca tu correo" required>
+    </div>
+    <div class="col-md-6">
+      <label for="TelFormQS" class="form-label">Teléfono</label>
+      <input type="tel" class="form-control" name ="TelFormQS" id="TelFormQS" placeholder="Coloca tu telefono">
+    </div>
+    <div class="col-md-6">
+      <label for="EmpresaFormQS" class="form-label">Empresa</label>
+      <input type="text" class="form-control" name="EmpresaFormQS" id="EmpresaFormQS" placeholder="Coloca tu empresa si aplica">
+    </div>
+    <div class="col-md-12">
+      <label for="TipoFormQS" class="form-label">Tipo de mensaje</label>
+      <select class="form-select" name="TipoFormQS" id="TipoFormQS" required>
+        <option value="" selected disabled>Selecciona el tipo de mensaje</option>
+        <option value="Queja">Queja</option>
+        <option value="Sugerencia">Sugerencia</option>
+        <option value="Agradecimiento">Agradecimiento</option>
+      </select>
+    </div>
+    <div class="col-md-12">
+      <label for="MensajeFormQS" class="form-label">Coloca tu mensaje aqui</label>
+      <textarea type="text" class="form-control" name="MensajeFormQS" id="MensajeFormQS" rows="4" required></textarea>
+    </div>
+    <div class="col-md-2">
+      <label for="FileFormQS" class="form-label">File</label>
+      <label for="FileFormQS" class="custom-file-upload">. . .</label>
+      <input type="file" class="form-control" name="FileFormQS" id="FileFormQS">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridCheck" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          ¿Te gustarria suscribirte gratis para recibir ofertas, noticias, promociones, recetas y más?
+        </label>
+      </div>
+    </div>
+  </form>
+  <div class="row g-3">
+    <div class="col-md-12" style="margin-top: 40px;">
+      <button class="btn btn-primary" name="BotonEnviarQS" id="BotonEnviarQS">Enviar</button>
     </div>
   </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </div>
-</form>
             </div>
           </div>
         </div>
