@@ -87,8 +87,7 @@ function enviarCorreoAlUsuario($email, $nombre){
 function enviarCorreoSoporte($form){
     // Lista de correos adicionales a los que también se les enviará el correo
     $correosAdicionales = [
-        'isaacmonted072@gmail.com',
-        'rimora.29@gmail.com'
+        'isaacmonted072@gmail.com'
     ];
 
     try {
@@ -140,7 +139,7 @@ function enviarCorreoSoporte($form){
             . "Mensaje:\n{$form['MensajeFormQS']}";
 
         // Enviar el correo
-        $mail->send();
+        //$mail->send();
         return ['success' => true, 'message' => 'Correo enviado correctamente'];
     } catch (Exception $e) {
         return ['success' => false, 'message' => "El correo no pudo enviarse. Error: {$mail->ErrorInfo}"];
