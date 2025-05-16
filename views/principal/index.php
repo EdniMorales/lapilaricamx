@@ -771,13 +771,17 @@
       <label for="EmailFormQS" class="form-label">Email</label>
       <input type="email" class="form-control" name="EmailFormQS" id="EmailFormQS" placeholder="Coloca tu correo" required>
     </div>
+    <div class="col-md-12">
+      <label for="DireccionFormQS" class="form-label">Direccion</label>
+      <input type="text" class="form-control" name="DireccionFormQS" id="DireccionFormQS" placeholder="Opcional">
+    </div>
     <div class="col-md-6">
       <label for="TelFormQS" class="form-label">Teléfono</label>
-      <input type="tel" class="form-control" name ="TelFormQS" id="TelFormQS" placeholder="Coloca tu telefono">
+      <input type="tel" class="form-control" name ="TelFormQS" id="TelFormQS" placeholder="Opcional">
     </div>
     <div class="col-md-6">
       <label for="EmpresaFormQS" class="form-label">Empresa</label>
-      <input type="text" class="form-control" name="EmpresaFormQS" id="EmpresaFormQS" placeholder="Coloca tu empresa si aplica">
+      <input type="text" class="form-control" name="EmpresaFormQS" id="EmpresaFormQS" placeholder="Opcional">
     </div>
     <div class="col-md-12">
       <label for="TipoFormQS" class="form-label">Tipo de mensaje</label>
