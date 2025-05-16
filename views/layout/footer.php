@@ -111,14 +111,15 @@
             <div class="input-group">
               <input
                 class="form-control"
+                id="CasillaFooterSuscripcionCorreo"
                 type="text"
-                placeholder="Ingresa tu correo electronico"
+                placeholder="¡Ingresa tu correo!"
                 aria-label="Correo Electronico..."
                 aria-describedby="button-newsletter"
               />
               <button
                 class="btn btn-outline-light"
-                id="button-newsletter"
+                id="BotonFooterSuscribirse"
                 type="button"
               >
                 Registrarse
@@ -133,9 +134,7 @@
       <!-- Copyright -->
       <div class="text-center text-white p-4" style="background-color: #380000">
         © 2025 Copyright:
-        <a class="" href="https://mdbootstrap.com/"
-          >teampcmx</a
-        >
+        <a class="" href="https://teampcmx.com/">Gorilla Systems</a> <!--Es broma xd-->
       </div>
       <!-- Copyright -->
     </footer>
@@ -200,7 +199,15 @@
         const pageString = "index";
         const widgetString = "dropdown-index";
         trriggers.ProductSearch(buttonString,pageString,widgetString); // Pasa el string a la función
-      });// Botón de búsqueda
+      }); // Formulario de quejas y sugerencias
+      document.getElementById("BotonEnviarQS").addEventListener("click", function() {
+        const Formulario = "FormularioQS";
+        trriggers.EnviarDatosDelFormulario(Formulario); // Ejecutar la funcion que envia los datos al servidor
+      }); // Suscripcion del correo
+      document.getElementById("BotonFooterSuscribirse").addEventListener("click", function(){
+        const casillaCorreo = "CasillaFooterSuscripcionCorreo";
+        trriggers.SuscribirCorreoPilaricaNews(casillaCorreo);
+      }); // Botón de búsqueda
       //document.getElementById("navbarSupportedContent").addEventListener("click", function(){
       //  const pageString = "index";
       //  const widgetString = "Categorias";// El dropdown con las categorias

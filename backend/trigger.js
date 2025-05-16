@@ -1,3 +1,4 @@
+import * as formulario from './quejasSugerencias.js';
 import * as widgets from './widgets.js';
 
 // Disparadores de los botones del DOM
@@ -80,4 +81,13 @@ export function MostrarDatosPorProductoIndividual(Id_Producto){
     }*/
 }
 
+export function SuscribirCorreoPilaricaNews(widget){
+    const correo = document.getElementById(widget);
+    // extraer el valor de la casilla y enviarlo al modelo
+    formulario.guardarCorreoEnElServidor(correo.value);
+}
 
+export function EnviarDatosDelFormulario(form){
+    // pasar el formulario al modelo
+    formulario.empaquetarElFormulario(form);
+}
