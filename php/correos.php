@@ -16,7 +16,7 @@ function configurarSMTP(PHPMailer $mail) {
     $mail->Encoding = 'base64';
 
     // Cargar las variables de entorno desde el archivo .env
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '../backend/credenciales.env');
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '/../backend/settings.env');
     $dotenv->load();
 
     // Validar que las variables de entorno necesarias estén configuradas
@@ -77,9 +77,9 @@ function enviarCorreoAlUsuario($email, $nombre){
 
         // Enviar el correo
         $mail->send();
-        echo json_encode(['success' => true, 'message' => 'Correo enviado correctamente']);
+        return ['success' => true, 'message' => 'Correo enviado correctamente'];
     } catch (Exception $e) {
-        echo json_encode(['success' => false, 'message' => "El correo no pudo enviarse. Error: {$mail->ErrorInfo}"]);
+        return ['success' => false, 'message' => "El correo no pudo enviarse. Error: {$mail->ErrorInfo}"];
     }
 }
 
@@ -141,14 +141,14 @@ function enviarCorreoSoporte($form){
 
         // Enviar el correo
         $mail->send();
-        echo json_encode(['success' => true, 'message' => 'Correo enviado correctamente']);
+        return ['success' => true, 'message' => 'Correo enviado correctamente'];
     } catch (Exception $e) {
-        echo json_encode(['success' => false, 'message' => "El correo no pudo enviarse. Error: {$mail->ErrorInfo}"]);
+        return ['success' => false, 'message' => "El correo no pudo enviarse. Error: {$mail->ErrorInfo}"];
     }
 }
 
 // funcion para informar que se ha suscrito a la pagina
-function enviarCorreoAlUsuarioSuscripcion($email, $nombre){
+function enviarCorreoAlUsuarioSuscripcion($email, $nombre='', $apellido=''){
      try {
         // Crear una instancia de PHPMailer
         $mail = new PHPMailer(true);
@@ -160,6 +160,9 @@ function enviarCorreoAlUsuarioSuscripcion($email, $nombre){
         $mail->setFrom($_ENV['CORREO_USER'], 'Lacteos La Pilarica');
         $mail->addAddress($email, $nombre);  // Correo del usuario
 
+        // Contenido del correo en HTML
+        $mail->isHTML(true);  // Usar HTML
+        $mail->Subject = 'Gracias por unirte a nuestra familia';
         $mail->Body = "
             <html>
                 <head>
@@ -169,20 +172,20 @@ function enviarCorreoAlUsuarioSuscripcion($email, $nombre){
                     </style>
                 </head>
                 <body>
-                    <h3>¡Hola!</h3>
+                    <h3>¡Hola {$nombre} {$apellido}!</h3>
                     <p class='mensaje'>Gracias por suscribirte a nuestro boletín de noticias. Ahora recibirás nuestras promociones y novedades.</p>
                     <p class='mensaje'>¡Bienvenido!</p>
                 </body>
             </html>
         ";
 
-        $mail->AltBody = "¡Hola!\n\nGracias por suscribirte a nuestro boletín de noticias. Ahora recibirás nuestras promociones y novedades.\n\n¡Bienvenido!";
+        $mail->AltBody = "¡Hola {$nombre} {$apellido}!\n\nGracias por suscribirte a nuestro boletín de noticias. Ahora recibirás nuestras promociones y novedades.\n\n¡Bienvenido!";
 
          // Enviar el correo
         $mail->send();
-        echo json_encode(['success' => true, 'message' => 'Correo enviado correctamente']);
+        return ['success' => true, 'message' => 'Correo enviado correctamente'];
     } catch (Exception $e) {
-        echo json_encode(['success' => false, 'message' => "El correo no pudo enviarse. Error: {$mail->ErrorInfo}"]);
+        return ['success' => false, 'message' => "El correo no pudo enviarse. Error: {$mail->ErrorInfo}"];
     }
 }
 
@@ -213,8 +216,8 @@ if (isset($_GET['action'])) {
             break;
 
         case 'correoSuscripcion':
-            if (isset($_POST['email'], $_POST['nombre'])) {
-                $data = enviarCorreoAlUsuarioSuscripcion($_POST['email'], $_POST['nombre']);
+            if (isset($_POST['email'], $_POST['nombre'], $_POST['apellido'])) {
+                $data = enviarCorreoAlUsuarioSuscripcion($_POST['email'], $_POST['nombre'], $_POST['apellido']);
             } else {
                 $data = ['error' => 'Faltan datos: email o nombre'];
             }
@@ -222,7 +225,7 @@ if (isset($_GET['action'])) {
 
         default:
             // Si la acción no es válida, se devuelve un error
-            $data = ["error" => "Acción no válida"];
+            $data = ["error" => "Accion no valida"];
             break;
     }
 
@@ -234,11 +237,10 @@ if (isset($_GET['action'])) {
         $data = ["error" => "No hay datos disponibles."];
     }
     // Devolver los datos en formato JSON
-    echo json_encode($data);
+    echo json_encode($data, JSON_UNESCAPED_UNICODE);
     } else {
         // Si no se pasa ninguna acción, devolver un error
-        echo json_encode(["error" => "Falta la acción en la solicitud"]);
+        echo json_encode(["error" => "Falta la acción en la solicitud"], JSON_UNESCAPED_UNICODE);
 }
 
-$conn->close();
 ?>

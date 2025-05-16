@@ -192,10 +192,10 @@ if (isset($_GET['action'])) {
     // Comprobar si los datos están vacíos
     if (empty($data)) {
         // Si no hay datos, devolver un mensaje adecuado
-        echo json_encode(["error" => "No hay datos disponibles."]);
+        echo json_encode(["error" => "No hay datos disponibles."], JSON_UNESCAPED_UNICODE);
     } else {
         // Devolver los datos en formato JSON
-        echo json_encode($data);
+        echo json_encode($data, JSON_UNESCAPED_UNICODE);
     }
 }
 

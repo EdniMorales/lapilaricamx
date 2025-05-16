@@ -206,7 +206,9 @@
       }); // Suscripcion del correo
       document.getElementById("BotonFooterSuscribirse").addEventListener("click", function(){
         const casillaCorreo = "CasillaFooterSuscripcionCorreo";
-        trriggers.SuscribirCorreoPilaricaNews(casillaCorreo);
+        const casillaUsuario = "NombreFormQS";
+        const casillaApellido = "ApellidoFormQS";
+        trriggers.SuscribirCorreoPilaricaNews(casillaCorreo, casillaUsuario, casillaApellido);
       }); // Botón de búsqueda
       //document.getElementById("navbarSupportedContent").addEventListener("click", function(){
       //  const pageString = "index";

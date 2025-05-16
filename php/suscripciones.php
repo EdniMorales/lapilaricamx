@@ -25,7 +25,9 @@ function saveEmailUserSuscriptionOnDataBase($conn, $email) {
     }
 
     // Preparamos la consulta para evitar inyección SQL
-    $query = "INSERT INTO SUSCRIPCIONES (CORREO, ESTADO) VALUES (?, 'Suscrito')";
+    $query = "INSERT INTO SUSCRIPCIONES (CORREO, ESTADO) 
+            VALUES (?, 'Suscrito')
+            ON DUPLICATE KEY UPDATE ESTADO = 'Suscrito', FECHA_CREACION = CURRENT_TIMESTAMP";
     $stmt = $conn->prepare($query);
     
     if ($stmt === false) {
@@ -229,10 +231,10 @@ if (isset($_GET['action'])) {
         $data = ["error" => "No hay datos disponibles."];
     }
     // Devolver los datos en formato JSON
-    echo json_encode($data);
+    echo json_encode($data, JSON_UNESCAPED_UNICODE);
     } else {
         // Si no se pasa ninguna acción, devolver un error
-        echo json_encode(["error" => "Falta la acción en la solicitud"]);
+        echo json_encode(["error" => "Falta la acción en la solicitud"], JSON_UNESCAPED_UNICODE);
 }
 
 $conn->close();
