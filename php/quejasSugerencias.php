@@ -15,36 +15,42 @@ if ($conn->connect_error){
     die("Conexion fallida: " . $conn->connect_error);
 }
 
-// funcion para enviar un correo de verificacion de su mensaje al usuario
-function enviarCorreoAlUsuario($email, $nombre){
-    $asunto = "Hemos recibido tu mensaje";
-    $mensaje = "Hola $nombre,\n\nGracias por contactarnos. Tu mensaje ha sido recibido correctamente.\n\nAtentamente,\nEquipo de soporte.";
-    $headers = "From: soporte@tupagina.com";
+// funcion gardar archivo
+function handleFileUpload($fileInputName = 'archivo') {
+    // Verifica que el archivo fue cargado sin errores
+    if (!isset($_FILES[$fileInputName]) || $_FILES[$fileInputName]['error'] !== UPLOAD_ERR_OK) {
+        return null; // Si no hay archivo o hay error, no subimos nada
+    }
 
-    mail($email, $asunto, $mensaje, $headers);
-}
+    $archivo = $_FILES[$fileInputName];
 
-// funcion para enviar un correo con el mensaje del formulario
-function enviarCorreoSoporte($form){
-    $asunto = "Nuevo mensaje de formulario - " . $form['TipoFormQS'];
-    $mensaje = "Nombre: {$form['NombreFormQS']} {$form['ApellidoFormQS']}\n";
-    $mensaje .= "Email: {$form['EmailFormQS']}\n";
-    $mensaje .= "Teléfono: {$form['TelFormQS']}\n";
-    $mensaje .= "Empresa: {$form['EmpresaFormQS']}\n";
-    $mensaje .= "Tipo: {$form['TipoFormQS']}\n";
-    $mensaje .= "Mensaje:\n{$form['MensajeFormQS']}\n";
+    // Validar tipo de archivo permitido
+    $tiposPermitidos = [
+        'image/jpeg' => 'jpg',
+        'image/png'  => 'png',
+        'application/pdf' => 'pdf'
+    ];
 
-    $headers = "From: no-reply@tupagina.com";
-    mail("soporte@tupagina.com", $asunto, $mensaje, $headers);
-}
+    $tipoArchivo = mime_content_type($archivo['tmp_name']);
+    if (!isset($tiposPermitidos[$tipoArchivo])) {
+        throw new Exception("Tipo de archivo no permitido: " . $tipoArchivo);
+    }
 
-// funcion para informar que se ha suscrito a la pagina
-function enviarCorreoAlUsuarioSuscripcion($email){
-    $asunto = "¡Gracias por suscribirte!";
-    $mensaje = "Ahora recibirás nuestras promociones y noticias. ¡Bienvenido!";
-    $headers = "From: newsletter@tupagina.com";
+    $extension = $tiposPermitidos[$tipoArchivo];
+    $nombreUnico = uniqid('adjunto_', true) . '.' . $extension;
 
-    mail($email, $asunto, $mensaje, $headers);
+    $carpetaDestino = '../uploads/';
+    if (!is_dir($carpetaDestino)) {
+        mkdir($carpetaDestino, 0777, true);
+    }
+
+    $rutaFinal = $carpetaDestino . $nombreUnico;
+
+    if (!move_uploaded_file($archivo['tmp_name'], $rutaFinal)) {
+        throw new Exception("No se pudo mover el archivo al destino.");
+    }
+
+    return $rutaFinal;
 }
 
 // ================================= COMENTARIOS =================================
@@ -52,18 +58,18 @@ function enviarCorreoAlUsuarioSuscripcion($email){
 // funcion para guardar la queja en la base de datos
 function saveMessageOnDataBase($conn, $form, $archivoNombreFinal = null) {
     // Validación básica de los datos
-    $nombre = htmlspecialchars($form['NOMBRE']);
-    $apellido = htmlspecialchars($form['APELLIDO']);
-    $correo = filter_var($form['CORREO'], FILTER_VALIDATE_EMAIL);
+    $nombre = htmlspecialchars($form['NombreFormQS']);
+    $apellido = htmlspecialchars($form['ApellidoFormQS']);
+    $correo = filter_var($form['EmailFormQS'], FILTER_VALIDATE_EMAIL);
     if (!$correo) {
         throw new Exception("Correo inválido.");
     }
 
-    $telefono = htmlspecialchars($form['TELEFONO']);
-    $direccion = htmlspecialchars($form['DIRECCION']);
-    $empresa = htmlspecialchars($form['EMPRESA']);
-    $tipo = htmlspecialchars($form['TIPO']);
-    $descripcion = htmlspecialchars($form['DESCRIPCION']);
+    $telefono = htmlspecialchars($form['TelFormQS']);
+    $direccion = htmlspecialchars($form['DireccionFormQS']);
+    $empresa = htmlspecialchars($form['EmpresaFormQS']);
+    $tipo = htmlspecialchars($form['TipoFormQS']);
+    $descripcion = htmlspecialchars($form['MensajeFormQS']);
     $estado = 'Pendiente'; // Asumiendo que por defecto es pendiente
 
     // Preparar la consulta SQL
@@ -89,34 +95,33 @@ function saveMessageOnDataBase($conn, $form, $archivoNombreFinal = null) {
     }
 }
 // funcion para editar la queja en la base de datos
-function editMessageOnDataBase($conn, $form, $id_comentario, $archivoNombreFinal = null) {
+function editMessageOnDataBase($conn, $form, $id_comentario, $estadoForm='Pendiente', $archivoNombreFinal = null) {
     // Validación de datos
-    $nombre = htmlspecialchars($form['NOMBRE']);
-    $apellido = htmlspecialchars($form['APELLIDO']);
-    $correo = filter_var($form['CORREO'], FILTER_VALIDATE_EMAIL);
+    $nombre = htmlspecialchars($form['NombreFormQS']);
+    $apellido = htmlspecialchars($form['ApellidoFormQS']);
+    $correo = filter_var($form['EmailFormQS'], FILTER_VALIDATE_EMAIL);
     if (!$correo) {
         throw new Exception("Correo inválido.");
     }
 
-    $telefono = htmlspecialchars($form['TELEFONO']);
-    $direccion = htmlspecialchars($form['DIRECCION']);
-    $empresa = htmlspecialchars($form['EMPRESA']);
-    $tipo = htmlspecialchars($form['TIPO']);
-    $descripcion = htmlspecialchars($form['DESCRIPCION']);
-    $estado = htmlspecialchars($form['ESTADO']);
+    $telefono = htmlspecialchars($form['TelFormQS']);
+    $direccion = htmlspecialchars($form['DireccionFormQS']);
+    $empresa = htmlspecialchars($form['EmpresaFormQS']);
+    $tipo = htmlspecialchars($form['TipoFormQS']);
+    $descripcion = htmlspecialchars($form['MensajeFormQS']);
+    $estado = htmlspecialchars($estadoForm);
     $archivo_adjunto = $archivoNombreFinal ?? 'undefined';
 
     // Preparar la consulta SQL para actualización
     $sql = "UPDATE COMENTARIOS SET 
-                NOMBRE = ?, APELLIDO = ?, CORREO = ?, TELEFONO = ?, DIRECCION = ?, EMPRESA = ?, 
-                TIPO = ?, DESCRIPCION = ?, ARCHIVO_ADJUNTO = ?, ESTADO = ? 
+                NOMBRE = ?, APELLIDO = ?, CORREO = ?, TELEFONO = ?, DIRECCION = ?, EMPRESA = ?,
+                TIPO = ?, DESCRIPCION = ?, ARCHIVO_ADJUNTO = ?, ESTADO = ?
             WHERE ID_COMENTARIO = ?";
 
     $stmt = $conn->prepare($sql);
     if (!$stmt) {
         throw new Exception("Error en la preparación de la consulta: " . $conn->error);
     }
-
     // Vincular los parámetros
     $stmt->bind_param("ssssssssssi", $nombre, $apellido, $correo, $telefono, $direccion, $empresa, $tipo, $descripcion, $archivo_adjunto, $estado, $id_comentario);
 
@@ -237,14 +242,19 @@ if (isset($_GET['action'])) {
             break;
 
         case 'saveComentario':
-            // Guarda un nuevo comentario
+            // Guarda un nuevo comentario (para formulario con multipart/form-data)
             try {
-                $form = json_decode(file_get_contents('php://input'), true);
-                if (isset($form['NOMBRE']) && isset($form['APELLIDO']) && isset($form['CORREO']) && isset($form['TIPO']) && isset($form['DESCRIPCION'])) {
-                    $archivoNombreFinal = null; // Si hay archivo, deberías manejarlo
-                    if (isset($form['ARCHIVO_ADJUNTO'])) {
-                        $archivoNombreFinal = handleFileUpload($form['ARCHIVO_ADJUNTO']);
+                $form = $_POST; // <- AQUÍ el cambio importante
+
+                // Validamos los campos obligatorios
+                if (isset($form['NombreFormQS']) && isset($form['ApellidoFormQS']) && isset($form['EmailFormQS']) && isset($form['TipoFormQS']) && isset($form['MensajeFormQS'])) {
+                    $archivoNombreFinal = null;
+
+                    // Si se subió un archivo, lo procesamos
+                    if (isset($_FILES['FileFormQS']) && $_FILES['FileFormQS']['error'] === 0) {
+                        $archivoNombreFinal = handleFileUpload('FileFormQS');
                     }
+
                     saveMessageOnDataBase($conn, $form, $archivoNombreFinal);
                     $data = ["success" => "Comentario guardado correctamente"];
                 } else {
@@ -260,12 +270,13 @@ if (isset($_GET['action'])) {
             if (isset($_GET['id_comentario'])) {
                 try {
                     $form = json_decode(file_get_contents('php://input'), true);
-                    if (isset($form['NOMBRE']) && isset($form['APELLIDO']) && isset($form['CORREO']) && isset($form['TIPO']) && isset($form['DESCRIPCION'])) {
+                    if (isset($form['NombreFormQS']) && isset($form['ApellidoFormQS']) && isset($form['EmailFormQS']) && isset($form['TipoFormQS']) && isset($form['MensajeFormQS'])) {
                         $archivoNombreFinal = null; // Si hay archivo, deberías manejarlo
-                        if (isset($form['ARCHIVO_ADJUNTO'])) {
-                            $archivoNombreFinal = handleFileUpload($form['ARCHIVO_ADJUNTO']);
+                        if (isset($form['FileFormQS'])) {
+                            $archivoNombreFinal = handleFileUpload('FileFormQS');
                         }
-                        editMessageOnDataBase($conn, $form, $_GET['id_comentario'], $archivoNombreFinal);
+                        $estado = $form['EstadoFormQS'] ?? 'Pendiente';
+                        editMessageOnDataBase($conn, $form, $_GET['id_comentario'], $estado, $archivoNombreFinal);
                         $data = ["success" => "Comentario actualizado correctamente"];
                     } else {
                         $data = ["error" => "Faltan campos obligatorios en el formulario"];
@@ -311,7 +322,6 @@ if (isset($_GET['action'])) {
         // Si no se pasa ninguna acción, devolver un error
         echo json_encode(["error" => "Falta la acción en la solicitud"]);
 }
-
 
 $conn->close();
 ?>
