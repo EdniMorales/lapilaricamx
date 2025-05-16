@@ -140,7 +140,7 @@ function enviarCorreoSoporte($form){
             . "Mensaje:\n{$form['MensajeFormQS']}";
 
         // Enviar el correo
-        //$mail->send();
+        $mail->send();
         return ['success' => true, 'message' => 'Correo enviado correctamente'];
     } catch (Exception $e) {
         return ['success' => false, 'message' => "El correo no pudo enviarse. Error: {$mail->ErrorInfo}"];
