@@ -317,10 +317,10 @@ if (isset($_GET['action'])) {
         $data = ["error" => "No hay datos disponibles."];
     }
     // Devolver los datos en formato JSON
-    echo json_encode($data);
+    echo json_encode($data, JSON_UNESCAPED_UNICODE);
     } else {
         // Si no se pasa ninguna acción, devolver un error
-        echo json_encode(["error" => "Falta la acción en la solicitud"]);
+        echo json_encode(["error" => "Falta la acción en la solicitud"], JSON_UNESCAPED_UNICODE);
 }
 
 $conn->close();

@@ -1,10 +1,60 @@
 
-export function guardarCorreoEnElServidor(correo){
-    if (!correo.includes('@')) {
+export async function guardarCorreoEnElServidor(correoUser, nombreUser, apellidoUser){
+    if (!correoUser.includes('@')) {
         alert("Correo inválido.");
         return;
     }
-    alert(`Ya te suscribiste: ${correo} xd`);
+
+    // promesa para enviar los datos al servidor y esperar la coonfirmacion
+    const responseData = await fetch(`../php/suscripciones.php?action=guardarSuscripcion`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            correo: correoUser,
+        })
+    })
+
+    // Verificar si la respuesta fue exitosa
+    const resultData = await responseData.json(); // Aseguramos que el PHP devuelve un JSON
+
+    // mostrar el mensaje acorde a la respuesta del servidor
+    if (resultData.success) {
+        console.log('Respuesta:', resultData.message);
+        // ya se guardo en la base ahora hay que informal al usuario
+
+        // promesa para enviar los datos al servidor y esperar la coonfirmacion
+        const responseCorreo = await fetch(`../php/correos.php?action=correoSuscripcion`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams({
+                email: correoUser,
+                nombre: nombreUser.toLowerCase().replace(/\b\w/g, char => char.toUpperCase()),
+                apellido: apellidoUser.toLowerCase().replace(/\b\w/g, char => char.toUpperCase())
+            })
+        })
+
+        // Verificar si la respuesta fue exitosa
+        const resultCorreo = await responseCorreo.json(); // Aseguramos que el PHP devuelve un JSON
+
+        // mostrar el mensaje acorde a la respuesta del servidor
+        if (resultCorreo.success){
+            console.log('Respuesta:', resultCorreo.message);
+            // informar al usuario que su suscripcion fue exitosa
+            alert(`Gracias por suscribirte: ${correoUser}`);
+        } else {
+            console.error('Error:', resultCorreo.message);
+            // Informar al usuario que hubo un error al momento de verificar su correo
+            alert(`Tuvimos un problema al momento de verificar el correo: ${correoUser}`);
+        }
+    } else {
+        // informar al usuario que no se pudo realizar el registro
+        console.error('Error:', resultData.message);
+        alert(`oops! No pudimos registrarte intentalo nuevamente`);
+    }
 }
 
 export function empaquetarElFormulario(form){
