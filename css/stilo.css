@@ -527,3 +527,9 @@ margin-bottom: -5%;
 input[type="file"] {
   display: none;
 }
+.cont-color{
+  background-color: #5f0f11;
+  color: white;
+  padding: 10px;
+ /*  border-radius: 5px; */
+}
