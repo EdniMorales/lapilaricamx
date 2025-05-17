@@ -126,12 +126,12 @@ export async function empaquetarElFormulario(form){
             // informar al usuario que su suscripcion fue exitosa
             alert(`Gracias por tus comentarios ${nombre.toLowerCase().replace(/\b\w/g, char => char.toUpperCase())} ${apellido.toLowerCase().replace(/\b\w/g, char => char.toUpperCase())}`);
 
-            limpiarFormulario(form);
-
             if (permiso.checked){
                 console.log("Suscribiendo correo");
                 guardarCorreoEnElServidor(email, nombre, apellido);
             }
+
+            limpiarFormulario(form);
         } else {
             console.error('Error:', resultCorreo.message);
             // Informar al usuario que hubo un error al momento de verificar su correo
