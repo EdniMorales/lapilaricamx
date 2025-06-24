@@ -121,8 +121,9 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
         ///const imagenProducto = product.IMAGEN_ETIQUETA || '../assets/new-cheese/default.png';  // Si no tiene imagen, usar la predeterminada
 
         const drop = document.createElement('div');
+        drop.classList.add('caj-prod');
         drop.innerHTML= `<div class="col mb-5">
-            <div class="card h-100">
+            <div class="card h-100 ">
                 <!-- Product image-->
                 <img class="card-img-top" src="${imagenProducto}" alt="..." />
                 <!-- Product details-->
