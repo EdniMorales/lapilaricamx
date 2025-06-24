@@ -89,7 +89,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactanos</a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                  <li><a class="dropdown-item" href="about.html">Bolsa de Trabajo</a></li>
+                  <li><a class="dropdown-item" href="../Bolsa/index">Bolsa de Trabajo</a></li>
                 </ul>
               </li>
               <li class="nav-item">
