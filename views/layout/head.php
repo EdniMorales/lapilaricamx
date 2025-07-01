@@ -29,15 +29,13 @@
       rel="stylesheet"
     />
     <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="<?= base_url ?>css/styles.css" rel="stylesheet" />
     <link href="<?= base_url ?>css/stilo.css" rel="stylesheet" />
    <!--  <link href="css/hover-zoom.css" rel="stylesheet" /> -->
     <link href="<?= base_url ?>css/animate.css" rel="stylesheet" />
    <!--  <link href="css/base.css" rel="stylesheet" /> -->
-       <!-- Bootstrap core JS-->
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+
     <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script type="module" src='<?= base_url ?>js/scripts.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -58,14 +56,11 @@
   </head>
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-      <!-- Navigation-->
       <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-        <!-- sticky-top -->
         <div class="container px-5">
           <a class="navbar-brand" href="<?= base_url ?>Principal/index">
             <img src="<?= base_url ?>assets/logo-resplandor-bco.png" alt="Logo" width="150" height="100" class="d-inline-block align-text-top"/>
           </a>
-          <!--  <a class="navbar-brand" href="index.html">Lacteos La Pilarica</a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -77,19 +72,13 @@
                   aria-expanded="false"
                   >Especialidades</a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog" id="Categorias"></ul>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <div class="dropdown-divider"></div>sfd{gkzdfklñhjvzsdikoñvjnxfkl}
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                </div> -->
-                <!-- PRUEBA -->
               </li>
               <!--<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>-->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactanos</a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                   <li><a class="dropdown-item" href="../Bolsa/index">Bolsa de Trabajo</a></li>
+                  <li><a class="dropdown-item" href="../Bolsa/index">Quiero ser cliente</a></li>
                 </ul>
               </li>
               <li class="nav-item">

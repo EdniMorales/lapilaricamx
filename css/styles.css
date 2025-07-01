@@ -3244,7 +3244,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: #1e2125;
   --bs-dropdown-link-hover-bg: #e9ecef;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #0d6efd;
+  --bs-dropdown-link-active-bg: #6e9cd0;/*aqui esta*/
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -3714,7 +3714,7 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
 
 
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #0d6efd;
+  --bs-nav-pills-link-active-bg: #6e9cd0;/*aqui esta*/
 }
 .nav-pills .nav-link {
   background: none;
@@ -3847,12 +3847,6 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
   margin-bottom: 0;
   list-style: none;
   color:#ffffff;
-
-
-
-
-
-
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
@@ -4422,7 +4416,7 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
-  --bs-accordion-active-color: #0c63e4;
+  --bs-accordion-active-color: #6e9cd0; /*aqui esta*/
   --bs-accordion-active-bg: #e7f1ff;
 }
 
@@ -4584,8 +4578,8 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
   --bs-pagination-focus-bg: #e9ecef;
   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   --bs-pagination-active-color: #fff;
-  --bs-pagination-active-bg: #0d6efd;
-  --bs-pagination-active-border-color: #0d6efd;
+  --bs-pagination-active-bg: #6e9cd0;
+  --bs-pagination-active-border-color: #6e9cd0;
   --bs-pagination-disabled-color: #6c757d;
   --bs-pagination-disabled-bg: #fff;
   --bs-pagination-disabled-border-color: #dee2e6;
