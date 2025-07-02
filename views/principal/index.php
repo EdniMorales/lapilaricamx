@@ -1,37 +1,5 @@
 
-      <!-- Header-->
-<!--       <header class="masthead py-5">
-        <div class="container px-5">
-          <div class="row gx-5 align-items-center justify-content-center">
-            <div class="col-lg-8 col-xl-7 col-xxl-6">
-              <div class="my-5 text-center text-xl-start">
-                <h1 class="display-5 fw-bolder text-white mb-2">
-                  Solo el Amor Supera la Leche
-                </h1>
-                <p class="lead fw-normal text-white-50 mb-4">
-                  En Lácteos la Pilarica sabemos que todos tenemos preferencias
-                  diferentes, por eso contamos con una extensa gama de
-                  productos, elaborados con el mismo amor de siempre.
-                </p>
-                <div
-                  class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start"
-                >
-                  <a
-                    class="btn btn-primary btn-lg px-4 me-sm-3"
-                    href="#features"
-                    >Mas productos</a
-                  >
-                  <a class="btn btn-outline-light btn-lg px-4" href="#!"
-                    >Ver mas ...</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header> -->
-<!-- Full Page Image Header with Vertically Centered Content -->
-<header class="masthead" >
+<header class="masthead">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
       <div class="col-12 text-center">
@@ -43,15 +11,6 @@
     </div>
   </div>
 </header>
-<!-- Page Content -->
-<!-- <section class="py-5">
-  <div class="container">
-    <h2 class="fw-light">Page Content</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis
-      blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat
-      reprehenderit expedita.</p>
-  </div>
-</section> -->
  <!-- Historia Don Fidel-->
  <section class="py-5">
   <div class="py-5 bg-light">
@@ -143,10 +102,6 @@
   </div>
 </section>
 <section>
-
-
-
-
 <div>
   <div class="parallax parallax-1">
     <div class="parallax-caption">

@@ -123,7 +123,7 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
         const drop = document.createElement('div');
         drop.classList.add('caj-prod');
         drop.innerHTML= `<div class="col mb-5">
-            <div class="card h-100 wow bounceInUp data-wow-duration="2s" data-wow-delay="5s">
+            <div class="card h-100 wow bounceInUp data-wow-duration="2s" data-wow-delay="2s">
                 <!-- Product image-->
                 <img class="card-img-top" src="${imagenProducto}" alt="..." />
                 <!-- Product details-->
