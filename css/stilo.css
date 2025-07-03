@@ -242,6 +242,37 @@
   text-shadow: 1px 1px #000000;
   margin-bottom: -35%;
 }
+.title-3 {
+  font-family: "Just Another Hand", cursive;
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  margin-top: -30%;
+  text-shadow: 2px 2px white;
+}
+.title-4 {
+  font-family: "Just Another Hand", cursive;
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  margin-top: 0%;
+  text-shadow: 2px 2px white;
+}
+.title-5 {
+  font-family: "Just Another Hand", cursive;
+  font-size: 80px;
+  color: white;
+  text-align: left;
+  margin-top: 0%;
+  text-shadow: 2px 2px black;
+}
+
+.content-section {
+  margin-top: 2%;
+/*   padding: 60px 0; */
+/*   background-color: #f8f9fa; */
+}
+
 .masthead1 {
   height: 50vh;
   min-height: 300px;
@@ -520,13 +551,13 @@ background-color: black;
   background-image: url("../assets/new-cheese/chapata/chapata-SF.png");
   background-size: cover;
   background-position: center;
-  /* border: 5px solid darkblue; */
-  /* background-size: 25px 50px; */
   background-size: 100% 100%;
   /* position: fixed;
 z-index: -1; */
+/* box-shadow: 0px 9px 31px -1px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0px 9px 31px -1px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 9px 31px -1px rgba(0,0,0,0.6); */
 }
-
 @media screen and (max-width: 768px) {
   .bg-image {
     display: none;

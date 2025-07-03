@@ -2,7 +2,7 @@
 <footer class="text-center bg-body-tertiary text-muted">
     <section class="d-flex justify-content-center justify-content-lg-between p-5 border-bottom container">
         <div class="me-3 d-none d-lg-block text-center tam-l">
-            <span class="">¡Siguenos en nuestras redes sociales!</span>
+            <span class="title-3">¡Siguenos en nuestras redes sociales!</span>
         </div>
         <div>
             <a href="" class="me-4">
@@ -20,7 +20,7 @@
         <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 text-center">
                         <i class="fas fa-gem me-3"></i>Lacteos La Pilarica
                     </h6>
                     <p class="text-center">
@@ -67,10 +67,7 @@
                         <a href="../complementos/index" class="text-reset">Complementos</a>
                     </p>
                 </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">Ubicanos</h6>
                     <p>
                         <i class="fas fa-home me-3"></i> Benito Juárez Sur N 46, Centro,
@@ -83,7 +80,6 @@
                     <p><i class="fas fa-phone me-3"></i>(55) 5972 0102</p>
                     <p><i class="fab fa-whatsapp me-3"></i>(56) 4543 8166</p>
                 </div>
-                <!-- Grid column -->
             </div>
         </div>
     </section>
@@ -113,7 +109,6 @@
     <div class="text-center text-white p-4" style="background-color: #380000">
         © 2025 Copyright:
         <a class="" href="https://teampcmx.com/">Lacteos La Pilarica</a>
-        <!--Es broma xd-->
     </div>
 </footer>
 <script>
