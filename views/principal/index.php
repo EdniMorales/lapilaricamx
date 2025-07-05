@@ -10,8 +10,6 @@
         </div>
     </div>
 </header>
-
-<!-- Portfolio-->
 <section class="content-section" id="portfolio">
     <div class="container px-4 px-lg-5">
         <div class="content-section-heading text-center">
@@ -384,7 +382,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4">Quejas y Sugerencias</h3>
+                                <h3 class="login-heading mb-4 text-center">Quejas y Sugerencias</h3>
                                 <form class="row g-3" id="FormularioQS" enctype="multipart/form-data">
                                     <div class="col-md-6">
                                         <label for="NombreFormQS" class="form-label">Nombre</label>
