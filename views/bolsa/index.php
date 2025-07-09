@@ -4,7 +4,7 @@
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                   <!--   <h1 class="display-4 fw-bolder">Shop in style</h1> -->
-                    <p class="lead fw-normal text-white-50 mb-0 txt-catego"> = Bolsa de Trabajo =</p>
+                    <p class="lead fw-normal mb-0 txt-tittle-sect"> = Bolsa de Trabajo =</p>
                 </div>
             </div>
         </header>
@@ -15,40 +15,41 @@
   <div class="row mb-4">
     <div class="col">
       <div data-mdb-input-init class="form-outline">
+            <labe class="form-label" for="form6Example1">Nombre(s):</label>
         <input type="text" id="form6Example1" class="form-control" />
-        <label class="form-label" for="form6Example1">First name</label>
       </div>
     </div>
     <div class="col">
       <div data-mdb-input-init class="form-outline">
+           <label class="form-label" for="form6Example2">Apellido(s):</label>
         <input type="text" id="form6Example2" class="form-control" />
-        <label class="form-label" for="form6Example2">Last name</label>
       </div>
     </div>
   </div>
 
   <!-- Text input -->
   <div data-mdb-input-init class="form-outline mb-4">
+     <label class="form-label" for="form6Example3">Compañia:</label>
     <input type="text" id="form6Example3" class="form-control" />
-    <label class="form-label" for="form6Example3">Company name</label>
+   
   </div>
 
   <!-- Text input -->
   <div data-mdb-input-init class="form-outline mb-4">
     <input type="text" id="form6Example4" class="form-control" />
-    <label class="form-label" for="form6Example4">Address</label>
+    <label class="form-label" for="form6Example4">Direccion:</label>
   </div>
 
   <!-- Email input -->
   <div data-mdb-input-init class="form-outline mb-4">
     <input type="email" id="form6Example5" class="form-control" />
-    <label class="form-label" for="form6Example5">Email</label>
+    <label class="form-label" for="form6Example5">Correo Eléctronico:</label>
   </div>
 
   <!-- Number input -->
   <div data-mdb-input-init class="form-outline mb-4">
     <input type="number" id="form6Example6" class="form-control" />
-    <label class="form-label" for="form6Example6">Phone</label>
+    <label class="form-label" for="form6Example6">Telefono:</label>
   </div>
 
   <!-- Message input -->
@@ -63,9 +64,6 @@
   
 </form>
 </div>
-
-
-
 
         <section class="py-5 ">
             <div class="container px-4 px-lg-5 mt-5">

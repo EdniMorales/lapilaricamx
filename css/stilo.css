@@ -315,6 +315,13 @@
   color: white;
   font-size: 500%;
 }
+.txt-tittle-sect{
+  font-family: "Just Another Hand", cursive;
+  color: black;
+  font-size: 300%;
+  text-align: center;
+  margin-top: 550px;
+}
 
 /* */
 .masthead3 {
