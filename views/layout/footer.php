@@ -20,10 +20,10 @@
         <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4 text-center">
+                    <h6 class="text-uppercase fw-bold mb-4">
                         <i class="fas fa-gem me-3"></i>Lacteos La Pilarica
                     </h6>
-                    <p class="text-center">
+                    <p class="text-text-left">
                         En Lácteos la Pilarica sabemos que todos tenemos preferencias
                         diferentes, por eso contamos con una extensa gama de productos,
                         elaborados con el mismo amor de siempre.
@@ -87,7 +87,7 @@
         <div
             class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
             <div class="mb-4 mb-xl-0 container">
-                <div class=" text-white">
+                <div class="title-6">
                     ¡ Suscríbete gratis para recibir ofertas, noticias, promociones, recetas y más...!
                 </div>
             </div>

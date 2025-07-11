@@ -3222,7 +3222,7 @@ textarea.form-control-lg {
 .dropdown-toggle:empty::after {
   margin-left: 0;
 }
-/* Submenu   */ 
+/* Submenu*/ 
 .dropdown-menu {
   --bs-dropdown-zindex: 1000;
   --bs-dropdown-min-width: 10rem;
@@ -3231,7 +3231,7 @@ textarea.form-control-lg {
   --bs-dropdown-spacer: 0.125rem;
   --bs-dropdown-font-size: 1rem;
   --bs-dropdown-color: #fff;
-  --bs-dropdown-bg:  #6e9cd0;
+  --bs-dropdown-bg:  #fff;
 
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
   --bs-dropdown-border-radius: 0.375rem;
@@ -3714,7 +3714,7 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
 
 
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #6e9cd0;/*aqui esta*/
+  --bs-nav-pills-link-active-bg: #ffffff;/*aqui esta*/
 }
 .nav-pills .nav-link {
   background: none;
@@ -3787,9 +3787,9 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
-  color:#ffffff;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
+  color:black;
+/*   border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px; */
  /*  border-top-left-radius: 100px; */
 /*   border-bottom-left-radius: 85px;
       border-top-left-radius: 20px;
@@ -3820,6 +3820,7 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar-brand {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
@@ -3828,7 +3829,7 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
-  color:#ffffff;
+  color:black;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
@@ -3846,7 +3847,7 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  color:#ffffff;
+  color:black;
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
@@ -3860,7 +3861,7 @@ box-shadow: 0px 13px 21px 0px rgba(0,0,0,0.47);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   color: var(--bs-navbar-color);
-  color:#ffffff;
+  color:#000000;
 }
 .navbar-text a,
 .navbar-text a:hover,

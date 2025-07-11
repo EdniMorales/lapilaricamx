@@ -142,25 +142,26 @@
   font-family: "Poppins", serif;
 }
 #navbar {
-  background-color: #6e9cd0;
+  background-color: #FFFFFF;
   top: 0;
   width: 100%;
   transition: top 0.8s;
+  color: black;
 }
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #8D8D8D;
   text-align: center;
   padding: 15px;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 18px;
 }
 .searchbar {
   margin-bottom: auto;
   /* margin-top: auto; */
   height: 60px;
-  background-color: white;
+  background-color: #8D8D8D;
   border-radius: 30px;
   padding: 10px;
 }
@@ -249,6 +250,7 @@
   text-align: center;
   margin-top: -30%;
   text-shadow: 2px 2px white;
+  
 }
 .title-4 {
   font-family: "Just Another Hand", cursive;
@@ -266,7 +268,17 @@
   margin-top: 0%;
   text-shadow: 2px 2px black;
 }
+.title-6 {
+  font-family: "Just Another Hand", cursive;
+  font-size: 50px;
+  color: white;
+  text-align: left;
+  margin-top: 0%;
+  text-shadow: 3px 5px black;
+}
+.tiitle-quejas{
 
+}
 .content-section {
   margin-top: 2%;
 /*   padding: 60px 0; */
@@ -412,8 +424,8 @@ color: black;
 background-color: black;
 } */
 .dropdownList a {
-  color: #6e9cd0;
-  background-color: #6e9cd0;
+  color: #000000;
+  background-color: #000000;
   padding: 10px;
   text-align: center;
   font-size: 50px;

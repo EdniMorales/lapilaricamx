@@ -134,7 +134,7 @@
     </div>
 </section>
 <!-- Team members section-->
-<section class="py-5 bg-light">
+<!-- <section class="py-5 bg-light">
     <div class="container px-5 my-5">
         <div class="text-center">
             <h2 class="fw-bolder">Todas nuestras especialidades</h2>
@@ -143,13 +143,10 @@
             </p>
         </div>
         <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4">
-            <!-- justify-content-center -->
             <div class="flip-box">
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/oaxacabn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                          <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/oaxaca-01.png" alt="..." />
@@ -160,8 +157,6 @@
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/panelabn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                            <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Panela-01.png" alt="..." />
@@ -172,8 +167,6 @@
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/cremabn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                            <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/cremabn.png" alt="..." />
@@ -184,8 +177,6 @@
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/mozzarellabn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                            <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Logo-MozzarellaD.png" alt="..." />
@@ -196,8 +187,6 @@
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/gustodelicatobn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                            <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Gusto-01.png" alt="..." />
@@ -208,8 +197,6 @@
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/mashiegobn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                            <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/manchego-01.png" alt="..." />
@@ -220,8 +207,6 @@
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/RancheroGourmetbn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                            <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/RancheroGourmetbn.png" alt="..." />
@@ -232,8 +217,6 @@
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center ">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/requesonbn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                            <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/logo-requeson.png" alt="..." />
@@ -244,8 +227,6 @@
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/rancherobn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                            <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Ranchero-01.png" alt="..." />
@@ -256,8 +237,6 @@
                 <div class="flip-box-inner col mb-5 mb-5 mb-xl-0">
                     <div class="flip-box-front text-center">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/ralladobn.png" alt="..." />
-                        <!--  <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                            <div class="fst-italic text-muted">Founder &amp; CEO</div> -->
                     </div>
                     <div class="flip-box-back">
                         <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Rallado-01.png" alt="..." />
@@ -267,112 +246,81 @@
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/frescobn.png" alt="..." />
-                    <!--    <h5 class="fw-bolder">Malvina Cilla</h5>
-                            <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Cotijabn.png" alt="..." />
-                    <!--         <h5 class="fw-bolder">Malvina Cilla</h5>
-                          <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/doble_crema_bn.png" alt="..." />
-                    <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
-                        <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/chihuahuabn.png" alt="..." />
-                    <!--         <h5 class="fw-bolder">Malvina Cilla</h5>
-                      <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/capressebn.png" alt="..." />
-                    <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
-                    <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/padellabn.png" alt="..." />
-                    <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
-                  <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Botanerobn.png" alt="..." />
-                    <!--       <h5 class="fw-bolder">Malvina Cilla</h5>
-                <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/fresas_con_crema_bn.png" alt="..." />
-                    <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
-              <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/duraznos_con_crema_bn.png" alt="..." />
-                    <!--        <h5 class="fw-bolder">Malvina Cilla</h5>
-            <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
 
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Gelatina-logo-bn.png" alt="..." />
-                    <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
-          <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/cajetabn.png" alt="..." />
-                    <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
-        <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/crema_fresas_bn.png" alt="..." />
-                    <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
-      <div class="fst-italic text-muted">CTO</div> -->
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Logo-Pay-bn.png" alt="..." />
-                    <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
-      <div class="fst-italic text-muted">CTO</div> -->
+      
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="text-center">
                     <img class="img-fluid mb-4 px-4" src="<?= base_url ?>assets/Yoghurt-logo-bn.png" alt="..." />
-                    <!--   <h5 class="fw-bolder">Malvina Cilla</h5>
-      <div class="fst-italic text-muted">CTO</div> -->
+     
                 </div>
             </div>
-            <!-- <div class="col mb-5">
-  <div class="text-center"> 
-      <img class="img-fluid mb-4 px-4" src="assets/Yoguricas-logo-bn.png" alt="..." />
-    <h5 class="fw-bolder">Malvina Cilla</h5>
-      <div class="fst-italic text-muted">CTO</div> 
-  </div>
-</div> -->
+         
         </div>
     </div>
-</section>
+</section> -->
+
 <section class="cont-color">
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
@@ -426,7 +374,7 @@
                                     <div class="col-md-12">
                                         <label for="MensajeFormQS" class="form-label">Coloca tu mensaje aqui</label>
                                         <textarea type="text" class="form-control" name="MensajeFormQS"
-                                            id="MensajeFormQS" rows="4" required></textarea>
+                                            id="MensajeFormQS" rows="4" required></textarea>3
                                     </div>
                                     <div class="col-md-2">
                                         <label for="FileFormQS" class="form-label">File</label>
@@ -463,16 +411,7 @@
 
 
 
-
+<!-- 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CIoJNcqQMw4FTF3TvxjQXvAchNVFOQ4&ehbc=2E312F&noprof=1"
     width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-<!--      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.6681752713012!2d-98.88628984653572!3d19.311205690031276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa21134d905ff%3A0xe3db2ad818cf6e41!2sLa%20Pilarica!5e0!3m2!1ses!2smx!4v1740519007211!5m2!1ses!2smx"
-        width="100%"
-        height="600"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe> -->
+    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
