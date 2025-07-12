@@ -277,7 +277,20 @@
   text-shadow: 3px 5px black;
 }
 .tiitle-quejas{
-
+  font-family: "Just Another Hand", cursive;
+  font-size: 75px;
+  color: white;
+  text-align: left;
+  margin-top: 0%;
+  text-shadow: 3px 4px black;
+}
+.tiitle-description{
+  font-family: "Just Another Hand", cursive; 
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  margin-top: 0%;
+  text-shadow: 3px 4px black;
 }
 .content-section {
   margin-top: 2%;

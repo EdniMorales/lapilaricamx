@@ -330,40 +330,40 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4 text-center">Quejas y Sugerencias</h3>
+                                <h3 class="login-heading mb-4 text-center tiitle-quejas">Quejas y Sugerencias</h3>
                                 <form class="row g-3" id="FormularioQS" enctype="multipart/form-data">
                                     <div class="col-md-6">
-                                        <label for="NombreFormQS" class="form-label">Nombre</label>
+                                        <label for="NombreFormQS" class="form-label tiitle-description">Nombre</label>
                                         <input type="text" class="form-control" name="NombreFormQS" id="NombreFormQS"
                                             placeholder="Coloca tu nombre" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="ApellidoFormQS" class="form-label">Apellido</label>
+                                        <label for="ApellidoFormQS" class="form-label tiitle-description">Apellido</label>
                                         <input type="text" class="form-control" name="ApellidoFormQS"
                                             id="ApellidoFormQS" placeholder="Coloca tu apellido" required>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="EmailFormQS" class="form-label">Email</label>
+                                        <label for="EmailFormQS" class="form-label tiitle-description">Email</label>
                                         <input type="email" class="form-control" name="EmailFormQS" id="EmailFormQS"
                                             placeholder="Coloca tu correo" required>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="DireccionFormQS" class="form-label">Direccion</label>
+                                        <label for="DireccionFormQS" class="form-label tiitle-description">Direccion</label>
                                         <input type="text" class="form-control" name="DireccionFormQS"
                                             id="DireccionFormQS" placeholder="Opcional">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="TelFormQS" class="form-label">Teléfono</label>
+                                        <label for="TelFormQS" class="form-label tiitle-description">Teléfono</label>
                                         <input type="tel" class="form-control" name="TelFormQS" id="TelFormQS"
                                             placeholder="Opcional">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="EmpresaFormQS" class="form-label">Empresa</label>
+                                        <label for="EmpresaFormQS" class="form-label tiitle-description">Empresa</label>
                                         <input type="text" class="form-control" name="EmpresaFormQS" id="EmpresaFormQS"
                                             placeholder="Opcional">
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="TipoFormQS" class="form-label">Tipo de mensaje</label>
+                                        <label for="TipoFormQS" class="form-label tiitle-description">Tipo de mensaje</label>
                                         <select class="form-select" name="TipoFormQS" id="TipoFormQS" required>
                                             <option value="" selected disabled>Selecciona el tipo de mensaje</option>
                                             <option value="Queja">Queja</option>
@@ -372,12 +372,12 @@
                                         </select>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="MensajeFormQS" class="form-label">Coloca tu mensaje aqui</label>
+                                        <label for="MensajeFormQS" class="form-label tiitle-description">Coloca tu mensaje aqui</label>
                                         <textarea type="text" class="form-control" name="MensajeFormQS"
-                                            id="MensajeFormQS" rows="4" required></textarea>3
+                                            id="MensajeFormQS" rows="4" required></textarea>
                                     </div>
                                     <div class="col-md-2">
-                                        <label for="FileFormQS" class="form-label">File</label>
+                                        <label for="FileFormQS" class="form-label tiitle-description">Adjuntar</label>
                                         <label for="FileFormQS" class="custom-file-upload">. . .</label>
                                         <input type="file" class="form-control" name="FileFormQS" id="FileFormQS">
                                     </div>
