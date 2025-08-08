@@ -35,7 +35,7 @@
     <script>
     new WOW().init();
     </script>
-</head>
+</head> 
 
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
