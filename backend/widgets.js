@@ -110,7 +110,7 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
 
         // Verificar si IMAGEN_PRODUCTO tiene un valor Base64 o es null
         let imagenProducto = product.IMAGEN_ETIQUETA;
-        if (!imagenProducto) {
+        if (imagenProducto != 'pilarica') { // !imagenProducto
             // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
             imagenProducto = '../assets/new-cheese/default.png';
         } else {
@@ -234,7 +234,7 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
 
         // Verificar si IMAGEN_PRODUCTO tiene un valor Base64 o es null
         let imagenProductoDB = product.IMAGEN_PRODUCTO;
-        if (!imagenProductoDB) {
+        if (imagenProductoDB != 'Pilarica') { // !imagenProductoDB
             // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
             imagenProductoDB = '../assets/new-cheese/default.png';
         } else {
@@ -244,7 +244,7 @@ export function ColocarLosDatosDelProductoEnLaPagina(array) {
 
         // Verificar si IMAGEN_ETIQWUETA tiene un valor Base64 o es null
         let imagenEtiquetaDB = product.IMAGEN_ETIQUETA;
-        if (!imagenEtiquetaDB) {
+        if (imagenEtiquetaDB != 'Pilarica') { // !imagenEtiquetaDB
             // Si IMAGEN_PRODUCTO es null o vacío, usar una imagen predeterminada
             imagenEtiquetaDB = '../assets/new-cheese/default.png';
         } else {

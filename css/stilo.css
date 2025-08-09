@@ -328,14 +328,14 @@
   min-width: 100%;
   min-height: 150px;
   background-color: #5f0f11;
-  background-image: url('../assets/new-cheese/pruebas-banners/banner-vacas-prueba.jpg');
+  background-image: url('../assets/new-cheese/pruebas-banners/header-vacas.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .txt-catego {
-  margin-top: 10%;
+  margin-top: 25%;
   font-family: "Just Another Hand", cursive;
   color: white;
   font-size: 500%;
