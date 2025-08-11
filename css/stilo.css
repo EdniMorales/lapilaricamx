@@ -1,3 +1,5 @@
+@import url('stilo-720.css');
+@import url('stilo-letra.css');
 /*
 * To change this template, choose Tools | Templates
 * and open the template in the editor.
@@ -6,141 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-.princess-sofia-regular {
-  font-family: "Princess Sofia", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 750%;
-}
-.princess-sofia-italic {
-  font-family: "Princess Sofia", cursive;
-  font-weight: 400;
-  font-style: italic;
-}
-.princess-sofia-bold {
-  font-family: "Princess Sofia", cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-.poppins-thin {
-  font-family: "Poppins", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-.poppins-extralight {
-  font-family: "Poppins", serif;
-  font-weight: 200;
-  font-style: normal;
-}
-.poppins-light {
-  font-family: "Poppins", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.poppins-regular {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.poppins-medium {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-.poppins-semibold {
-  font-family: "Poppins", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-.poppins-bold {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.poppins-extrabold {
-  font-family: "Poppins", serif;
-  font-weight: 800;
-  font-style: normal;
-}
-.poppins-black {
-  font-family: "Poppins", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-.poppins-thin-italic {
-  font-family: "Poppins", serif;
-  font-weight: 100;
-  font-style: italic;
-}
-.poppins-extralight-italic {
-  font-family: "Poppins", serif;
-  font-weight: 200;
-  font-style: italic;
-}
-.poppins-light-italic {
-  font-family: "Poppins", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-.poppins-regular-italic {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-.poppins-medium-italic {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-.poppins-semibold-italic {
-  font-family: "Poppins", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-.poppins-bold-italic {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-.poppins-extrabold-italic {
-  font-family: "Poppins", serif;
-  font-weight: 800;
-  font-style: italic;
-}
-.poppins-black-italic {
-  font-family: "Poppins", serif;
-  font-weight: 900;
-  font-style: italic;
-}
-.just-another-hand-regular {
-  font-family: "Just Another Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-.just-another-hand-italic {
-  font-family: "Just Another Hand", cursive;
-  font-weight: 400;
-  font-style: italic;
-}
-.just-another-hand-bold {
-  font-family: "Just Another Hand", cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-.just-another-hand-bold-italic {
-  font-family: "Just Another Hand", cursive;
-  font-weight: 700;
-  font-style: italic;
-}
-.just-another-hand-thin {
-  font-family: "Just Another Hand", cursive;
-  font-weight: 100;
-  font-style: normal;
-}
-* {
-  font-family: "Poppins", serif;
-}
 #navbar {
   background-color: #FFFFFF;
   top: 0;
@@ -223,7 +92,7 @@
   font-size: 120px;
   color: white;
   text-align: center;
-  margin-top: -30%;
+  margin-top: -20%;
   text-shadow: 2px 2px #000000;
 }
 .title-2 {
@@ -373,7 +242,7 @@
 }
 .title-art {
   font-family: "Just Another Hand", cursive;
-  margin-top: 41%;
+  margin-top: 28%;
   /* margin-right: -110%; */
   font-size: 75px;
   color: white;

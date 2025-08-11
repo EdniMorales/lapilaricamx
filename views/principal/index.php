@@ -149,7 +149,7 @@
     <div>
         <div class="parallax parallax-1">
             <div class="parallax-caption">
-                <h1 class="princess-sofia-regular">Provolone</h1>
+                <p class="princess-sofia-regular">Provolone</p>
                 <p>Explore the wonders of the great outdoors.</p>
             </div>
         </div>
@@ -160,7 +160,7 @@
         </div>
         <div class="parallax parallax-2"> 
             <div class="parallax-caption">
-                <h3>Urban Landscapes</h3>
+                <p class="libertinus-serif-regular">EDAM</p>
                 <p>Discover the vibrant energy of modern cities.</p>
             </div>
         </div>

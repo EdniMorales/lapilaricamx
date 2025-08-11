@@ -170,9 +170,6 @@ document.getElementById("BotonFooterSuscribirse").addEventListener("click", func
 //  trriggers.CategoriasSearch(pageString, widgetString)
 //});// Boton de las categorias
 </script>
-<!-- <script>
-  alert('La resolución de pantalla que tienes en este momento es de: ' + screen.width + ' x ' + screen.height)
-</script> -->
 </body>
 
 </html>
