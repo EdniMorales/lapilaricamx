@@ -38,7 +38,7 @@
                                 cone!</p> -->
                         </div>
                     </div>
-                    <img class="img-fluid" src="<?= base_url ?>assets/quesos-maduros.jpg" width="750" height="500"
+                    <img class="img-fluid" src="<?= base_url ?>assets/new-cheese/cookie/galleta.avif" width="750" height="500"
                         alt="..." />
                 </a>
             </div>

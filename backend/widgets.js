@@ -122,7 +122,8 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
 
         const drop = document.createElement('div');
         drop.classList.add('caj-prod');
-        drop.innerHTML= `<div class="col mb-5">
+        drop.innerHTML= `<div class="row">
+                            <div class="col mb-5">
             <div class="card h-100 wow bounceInUp data-wow-duration="2s" data-wow-delay="2s">
                 <!-- Product image-->
                 <img class="card-img-top" src="${imagenProducto}" alt="..." />
@@ -142,7 +143,7 @@ export function ColocarLosProductosEnLasTarjetas(widget,array){
                     <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../articulos/index?Id=${product.ID_PRODUCTOS}">Mas Info.</a></div>
                 </div>
             </div>
-        </div>`;
+        </div> </div>`;
 
     ddrop.appendChild(drop);
 });

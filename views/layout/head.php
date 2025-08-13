@@ -78,7 +78,7 @@
                     <div class="searchbar">
                         <input class="search_input" id="buscador-prod-index" type="text" name="" placeholder="Buscar" />
                         <a href="#" class="search_icon" id="button-buscador-prod-index">
-                            <!-- <i class="fa fa-search" aria-hidden="true"> --></i>
+                            <i class="fa fa-search fa-1x text-left" style="font-size: 18px; position: fixed;" aria-hidden="true"></i>
                         </a>
                         <div id="dropdown-index"></div>
                     </div>
