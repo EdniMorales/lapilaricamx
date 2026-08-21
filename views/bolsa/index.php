@@ -1,5 +1,3 @@
-
-<!-- Header-->
         <header class="masthead2 py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
@@ -8,7 +6,6 @@
                 </div>
             </div>
         </header>
-
 <div class="container">
 <form>
   <!-- 2 column grid layout with text inputs for the first and last names -->
